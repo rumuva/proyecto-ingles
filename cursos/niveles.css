@@ -1,0 +1,15 @@
+.brand-row { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: 1.1rem 0; }
+.brand-logo { width: 6.5rem; max-height: 4.2rem; object-fit: contain; border-radius: .3rem; background: white; }
+.b1 .course-hero { background: #17394c; border-bottom-color: #378372; }
+.b1 { --red: #2b675e; }
+.defs { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,13rem),1fr)); gap: .65rem; }
+.defs div { padding: .65rem .75rem; background: #edf3f7; border-radius: .3rem; }
+.defs dt { font-weight: 700; }
+.defs dd { margin: 0; }
+.model { border-left: .24rem solid #327665; background: #edf5f3; padding: .75rem; }
+#estudio table { width: 100%; border-collapse: collapse; }
+#estudio th,#estudio td { border: 1px solid #b4c6d0; padding: .38rem; vertical-align: top; overflow-wrap: anywhere; }
+#estudio th { background: #edf3f7; }
+#estudio caption { text-align: left; font-weight: 700; padding-block: .45rem; }
+details { margin-block: .75rem; }
+summary { cursor: pointer; }

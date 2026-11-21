@@ -112,7 +112,7 @@ const speechMessages = {
     'service-not-allowed': 'El navegador no permite usar su servicio de reconocimiento aquí.',
     'network': 'El servicio de reconocimiento no ha respondido. Revisa la conexión y vuelve a intentarlo.',
     'no-speech': 'No se ha detectado voz. Acércate al micrófono e inténtalo de nuevo.',
-    'language-not-supported': 'El reconocimiento en inglés británico no está disponible en este navegador.'
+    'language-not-supported': 'El reconocimiento en la variante de inglés seleccionada no está disponible en este navegador.'
 };
 
 let listening = null;
@@ -133,6 +133,7 @@ document.addEventListener('visibilitychange', () => {
 for (const practice of document.querySelectorAll('.speaking-practice')) {
     const player = practice.closest('[data-captions]');
     const audio = player.querySelector('audio');
+    const speechLanguage = player.dataset.speechLang || 'en-GB';
     const select = practice.querySelector('select');
     const model = practice.querySelector('.model-button');
     const speak = practice.querySelector('.speak-button');
@@ -206,7 +207,7 @@ for (const practice of document.querySelectorAll('.speaking-practice')) {
             const item = document.createElement('li');
             function addWord(word) {
                 const label = document.createElement('strong');
-                label.lang = 'en-GB';
+                label.lang = speechLanguage;
                 label.textContent = word;
                 item.append(label);
             }
@@ -219,7 +220,7 @@ for (const practice of document.querySelectorAll('.speaking-practice')) {
                 item.append(expected ? 'No se reconoció ' : 'Se reconoció de más ');
                 addWord(expected || heard);
             }
-            item.append('. ' + (pronunciationTips[expected] || ''));
+            item.append('. ' + (speechLanguage === 'en-GB' ? pronunciationTips[expected] || '' : ''));
             differences.append(item);
         }
     }
@@ -232,7 +233,7 @@ for (const practice of document.querySelectorAll('.speaking-practice')) {
         stopListening();
         courseAudio.forEach(track => track.pause());
         const recognition = new SpeechEngine();
-        recognition.lang = 'en-GB';
+        recognition.lang = speechLanguage;
         recognition.continuous = false;
         recognition.interimResults = false;
         recognition.maxAlternatives = 1;

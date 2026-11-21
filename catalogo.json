@@ -24,6 +24,62 @@
     "finalLabel": "Abrir evaluación final"
   },
   {
+    "id": "a2-50h",
+    "title": "Inglés A2 en situaciones cotidianas",
+    "category": "Inglés general",
+    "level": "Nivel A2",
+    "duration": "50 horas",
+    "units": 10,
+    "passingScore": 4,
+    "storageKey": "ingles-a2-50h-intentos-v1",
+    "summary": "Pide ayuda, organiza planes y resuelve cambios cotidianos en diez unidades de cinco horas.",
+    "cover": {
+      "src": "visuales/londres/tube.webp",
+      "alt": "Entrada a la estación de Westminster, Londres",
+      "width": 1200,
+      "height": 801
+    },
+    "resources": [
+      {
+        "label": "Programación",
+        "anchor": "#programa"
+      },
+      {
+        "label": "Glosario",
+        "anchor": "#glosario"
+      }
+    ],
+    "finalLabel": "Abrir evaluación final"
+  },
+  {
+    "id": "b1-50h",
+    "title": "Inglés B1 para comunicarte con autonomía",
+    "category": "Inglés general",
+    "level": "Nivel B1",
+    "duration": "50 horas",
+    "units": 10,
+    "passingScore": 4,
+    "storageKey": "ingles-b1-50h-intentos-v1",
+    "summary": "Cuenta experiencias, reclama, contrasta noticias y defiende decisiones con datos.",
+    "cover": {
+      "src": "visuales/londres/tower.webp",
+      "alt": "Vista de Tower Bridge y del Támesis, Londres",
+      "width": 1200,
+      "height": 675
+    },
+    "resources": [
+      {
+        "label": "Programación",
+        "anchor": "#programa"
+      },
+      {
+        "label": "Glosario",
+        "anchor": "#glosario"
+      }
+    ],
+    "finalLabel": "Abrir evaluación final"
+  },
+  {
     "id": "ingles-comercio-0179",
     "title": "Inglés profesional para comercio",
     "category": "Inglés profesional",
