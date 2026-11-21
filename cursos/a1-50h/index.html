@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>El proyecto de inglés | Inglés básico A1</title><link rel="stylesheet" href="style.css?v=subtitulos"><script src="app.js" defer></script><script src="subtitulos.js" defer></script></head>
+<title>El proyecto de inglés | Inglés básico A1</title><link rel="stylesheet" href="style.css?v=voz"><script src="app.js" defer></script><script src="subtitulos.js" defer></script><script src="practica-oral.js" defer></script></head>
 <body><a class="skip" href="#main">Saltar al contenido</a><header class="course-hero">
   <div class="course-top"><a href="../../">Proyecto Inglés</a><a href="#guia-visual">Guía visual</a></div>
   <div class="hero-inner">
@@ -23,7 +23,7 @@ textos cortos.</p>
 <p><strong>Docencia</strong> · Docente por designar</p>
 <p>Abre la primera unidad. Tras superar cada control tendrás acceso a la
 siguiente. El avance se guarda en este navegador. La producción oral se
-practica con una pareja o con el docente. Los audios usan dos voces de IA con acento británico. Puedes activar los subtítulos en inglés en los diálogos y en las pistas de práctica. En las pistas de práctica, aprovecha la pausa para responder antes de oír el modelo.</p>
+practica con una pareja o con el docente. Los audios usan dos voces de IA con acento británico. Puedes activar los subtítulos en inglés en los diálogos y en las pistas de práctica. Abre «Practicar con el micrófono» para escuchar y repetir una frase. En las pistas de práctica, aprovecha la pausa para responder antes de oír el modelo.</p>
 </section><nav id="units" aria-labelledby="units-title"><div class="unit-head"><h2 id="units-title">Unidades</h2><div class="quick-links"><a href="#guia-visual">Guía visual</a><a href="#glosario">Glosario</a><a href="#plan">Plan de repaso</a></div></div><div class="unit-grid">
 <button type="button" data-open="1" >1. Saludar, presentarse y deletrear</button><button type="button" data-open="2" disabled>2. Contacto, números y citas</button><button type="button" data-open="3" disabled>3. Familia, personas y objetos</button><button type="button" data-open="4" disabled>4. Rutinas y horarios de trabajo</button><button type="button" data-open="5" disabled>5. En una cafetería</button><button type="button" data-open="6" disabled>6. Barrio, mapas y direcciones</button><button type="button" data-open="7" disabled>7. Compras, tallas y precios</button><button type="button" data-open="8" disabled>8. Transporte y viajes</button><button type="button" data-open="9" disabled>9. Pedir ayuda y resolver una incidencia</button><button type="button" data-open="10" disabled>10. Jornada de acogida en inglés</button>
 </div></nav><p id="progress" role="status"></p><p id="storage" role="status"></p><noscript>Activa JavaScript para usar las unidades y guardar el avance.</noscript>
@@ -68,12 +68,44 @@ duda di Could you say that again, please?</p>
 <audio controls preload="none" aria-labelledby="pista-01-dialogo" src="audio/01-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-01-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-01-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-01-dialogo">Frase que quieres repetir</label>
+<select id="frase-01-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="01-pausa">
 <p id="pista-01-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-01-pausa" src="audio/01-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-01-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-01-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-01-pausa">Frase que quieres repetir</label>
+<select id="frase-01-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u1-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 01-dialogo.mp3.</strong> En la primera escucha,
@@ -287,12 +319,44 @@ si la hora puede confundirse.</p>
 <audio controls preload="none" aria-labelledby="pista-02-dialogo" src="audio/02-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-02-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-02-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-02-dialogo">Frase que quieres repetir</label>
+<select id="frase-02-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="02-pausa">
 <p id="pista-02-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-02-pausa" src="audio/02-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-02-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-02-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-02-pausa">Frase que quieres repetir</label>
+<select id="frase-02-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u2-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 02-dialogo.mp3.</strong> En la primera escucha,
@@ -501,12 +565,44 @@ Escucha la /z/ final de phones y conserva el final al hablar.</p>
 <audio controls preload="none" aria-labelledby="pista-03-dialogo" src="audio/03-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-03-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-03-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-03-dialogo">Frase que quieres repetir</label>
+<select id="frase-03-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="03-pausa">
 <p id="pista-03-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-03-pausa" src="audio/03-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-03-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-03-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-03-pausa">Frase que quieres repetir</label>
+<select id="frase-03-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u3-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 03-dialogo.mp3.</strong> En la primera escucha,
@@ -713,12 +809,44 @@ hora si es el dato nuevo.</p>
 <audio controls preload="none" aria-labelledby="pista-04-dialogo" src="audio/04-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-04-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-04-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-04-dialogo">Frase que quieres repetir</label>
+<select id="frase-04-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="04-pausa">
 <p id="pista-04-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-04-pausa" src="audio/04-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-04-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-04-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-04-pausa">Frase que quieres repetir</label>
+<select id="frase-04-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u4-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 04-dialogo.mp3.</strong> En la primera escucha,
@@ -927,12 +1055,44 @@ fifty.</p>
 <audio controls preload="none" aria-labelledby="pista-05-dialogo" src="audio/05-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-05-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-05-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-05-dialogo">Frase que quieres repetir</label>
+<select id="frase-05-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="05-pausa">
 <p id="pista-05-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-05-pausa" src="audio/05-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-05-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-05-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-05-pausa">Frase que quieres repetir</label>
+<select id="frase-05-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u5-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 05-dialogo.mp3.</strong> En la primera escucha,
@@ -1143,12 +1303,44 @@ bank?</p>
 <audio controls preload="none" aria-labelledby="pista-06-dialogo" src="audio/06-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-06-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-06-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-06-dialogo">Frase que quieres repetir</label>
+<select id="frase-06-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="06-pausa">
 <p id="pista-06-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-06-pausa" src="audio/06-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-06-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-06-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-06-pausa">Frase que quieres repetir</label>
+<select id="frase-06-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u6-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 06-dialogo.mp3.</strong> En la primera escucha,
@@ -1360,12 +1552,44 @@ números parecidos usa la confirmación: Twelve or twenty? En these busca
 <audio controls preload="none" aria-labelledby="pista-07-dialogo" src="audio/07-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-07-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-07-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-07-dialogo">Frase que quieres repetir</label>
+<select id="frase-07-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="07-pausa">
 <p id="pista-07-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-07-pausa" src="audio/07-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-07-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-07-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-07-pausa">Frase que quieres repetir</label>
+<select id="frase-07-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u7-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 07-dialogo.mp3.</strong> En la primera escucha,
@@ -1572,12 +1796,44 @@ andén.</p>
 <audio controls preload="none" aria-labelledby="pista-08-dialogo" src="audio/08-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-08-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-08-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-08-dialogo">Frase que quieres repetir</label>
+<select id="frase-08-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="08-pausa">
 <p id="pista-08-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-08-pausa" src="audio/08-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-08-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-08-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-08-pausa">Frase que quieres repetir</label>
+<select id="frase-08-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u8-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 08-dialogo.mp3.</strong> En la primera escucha,
@@ -1790,12 +2046,44 @@ completar una frase perfecta.</p>
 <audio controls preload="none" aria-labelledby="pista-09-dialogo" src="audio/09-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-09-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-09-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-09-dialogo">Frase que quieres repetir</label>
+<select id="frase-09-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="09-pausa">
 <p id="pista-09-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-09-pausa" src="audio/09-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-09-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-09-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-09-pausa">Frase que quieres repetir</label>
+<select id="frase-09-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u9-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 09-dialogo.mp3.</strong> En la primera escucha,
@@ -2006,12 +2294,44 @@ una interacción inicial.</p>
 <audio controls preload="none" aria-labelledby="pista-10-dialogo" src="audio/10-dialogo.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-10-dialogo" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-10-dialogo" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-10-dialogo">Frase que quieres repetir</label>
+<select id="frase-10-dialogo" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <div class="audio-player" data-captions="10-pausa">
 <p id="pista-10-pausa"><strong>Respuestas modelo · pausa antes de cada frase</strong></p>
 <audio controls preload="none" aria-labelledby="pista-10-pausa" src="audio/10-pausa.mp3?v=britanico"></audio>
 <button type="button" class="captions-toggle" aria-pressed="false" aria-controls="subtitulos-10-pausa" hidden>Subtítulos en inglés</button>
 <div id="subtitulos-10-pausa" class="audio-captions" hidden><span class="captions-state" role="status"></span><span class="captions-speaker"></span><span class="captions-text" lang="en-GB"></span></div>
+<details class="speaking-practice" hidden>
+<summary>Practicar con el micrófono</summary>
+<p>Escucha una frase y repítela cuando veas «Te escucho». El resultado compara las palabras reconocidas. La detección de sonidos y del acento requiere una evaluación fonética aparte.</p>
+<label for="frase-10-pausa">Frase que quieres repetir</label>
+<select id="frase-10-pausa" lang="en-GB" disabled><option lang="es">Cargando…</option></select>
+<div class="speaking-controls">
+<button type="button" class="model-button" disabled>Escuchar frase</button>
+<button type="button" class="speak-button" disabled>Repetir con el micrófono</button>
+</div>
+<p class="speaking-privacy">El curso no guarda la grabación. Tu navegador puede enviar el audio a su servicio de reconocimiento.</p>
+<p class="speaking-status" role="status"></p>
+<div class="speaking-feedback" hidden>
+<p><strong>El navegador oyó</strong> <span class="heard-words" lang="en-GB"></span></p>
+<ul class="speaking-differences"></ul>
+</div>
+</details>
 </div>
 <h3 id="u10-escuchar-antes-de-leer">Escuchar antes de leer</h3>
 <p><strong>Pista 10-dialogo.mp3.</strong> En la primera escucha,

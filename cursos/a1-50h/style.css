@@ -111,3 +111,36 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
 }
 .captions-speaker { color: #ffdaaa; font-weight: 700; }
 .captions-speaker:empty, .captions-state:empty { display: none; }
+
+.speaking-practice {
+  margin-top: .8rem;
+  padding-top: .7rem;
+  border-top: 1px solid #d3deea;
+}
+.speaking-practice summary {
+  color: #8c1d36;
+  font-weight: 750;
+  cursor: pointer;
+  padding: .3rem 0;
+}
+.speaking-practice p { margin: .45rem 0; }
+.speaking-practice label { padding: .25rem 0; font-weight: 650; }
+.speaking-practice select {
+  display: block;
+  width: min(100%,34rem);
+  min-width: 0;
+  min-height: 2.75rem;
+  font: inherit;
+  color: #162747;
+  background: white;
+  border: 1px solid #879ab2;
+  border-radius: .38rem;
+  padding: .35rem .5rem;
+}
+.speaking-practice select:focus-visible { outline: 3px solid #9a480e; outline-offset: 4px; }
+.speaking-controls { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0; }
+.speaking-controls button { min-height: 2.75rem; }
+.speaking-privacy { font-size: .88rem; }
+.speaking-status:not(:empty) { font-weight: 700; }
+.speaking-feedback { border-left: .2rem solid var(--red); padding: .2rem .8rem; background: white; }
+.speaking-feedback ul:empty { display: none; }
