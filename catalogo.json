@@ -18,7 +18,8 @@
     "resources": [
       { "label": "Guía visual", "anchor": "#guia-visual" }
     ],
-    "finalLabel": "Abrir evaluación final"
+    "finalLabel": "Abrir evaluación final",
+    "guide": "guia-didactica.pdf"
   },
   {
     "id": "ingles-comercio-0179",
@@ -40,6 +41,7 @@
       { "label": "Guía de estudio", "anchor": "#programa" },
       { "label": "Glosario", "anchor": "#glosario" }
     ],
-    "finalLabel": "Abrir simulacro"
+    "finalLabel": "Abrir simulacro",
+    "guide": "guia-didactica.pdf"
   }
 ]

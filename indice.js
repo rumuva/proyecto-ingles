@@ -93,6 +93,11 @@ function renderCard(course, progress) {
     const actions = element('div', null, 'actions');
     const action = courseAction(course, progress);
     actions.append(link(action.title, action.url, 'button'));
+    if (course.guide) {
+        const guide = link('Descargar guía didáctica (PDF)', 'cursos/' + encodeURIComponent(course.id) + '/' + course.guide);
+        guide.setAttribute('download', '');
+        actions.append(guide);
+    }
     for (const resource of course.resources ?? []) {
         actions.append(link(resource.label, 'cursos/' + encodeURIComponent(course.id) + '/' + resource.anchor));
     }

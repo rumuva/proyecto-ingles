@@ -166,3 +166,19 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
   aspect-ratio: 3 / 2;
   object-fit: cover;
 }
+
+.cover-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem;
+}
+.course-hero .guide-download {
+  display: inline-block;
+  padding: .57rem .85rem;
+  border: 1px solid #899db4;
+  border-radius: .34rem;
+  color: white;
+  text-decoration: none;
+}
+.course-hero .guide-download:hover { background: #fff2; }
