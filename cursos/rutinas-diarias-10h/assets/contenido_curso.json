@@ -1,0 +1,1126 @@
+{
+  "phrases": [
+    {
+      "id": "wake",
+      "es": "Me despierto temprano",
+      "en": "I wake up early",
+      "ipa": "/aɪ weɪk ʌp ˈɝli/",
+      "help": "ai uéik ap érli",
+      "unit": 1,
+      "tip": "Al empezar el día.",
+      "example": "I wake up early on weekdays.",
+      "example_es": "Me despierto temprano entre semana."
+    },
+    {
+      "id": "washface",
+      "es": "Me lavo la cara",
+      "en": "I wash my face",
+      "ipa": "/aɪ wɑʃ maɪ feɪs/",
+      "help": "ai uósh mai féis",
+      "unit": 1,
+      "tip": "Con wash hablamos de lavar una parte del cuerpo.",
+      "example": "I wash my face every morning.",
+      "example_es": "Me lavo la cara todas las mañanas."
+    },
+    {
+      "id": "brush",
+      "es": "Me cepillo los dientes",
+      "en": "I brush my teeth",
+      "ipa": "/aɪ brʌʃ maɪ tiːθ/",
+      "help": "ai brásh mai tíiz*",
+      "unit": 1,
+      "tip": "Teeth es plural de tooth.",
+      "example": "I brush my teeth after breakfast.",
+      "example_es": "Me cepillo los dientes después de desayunar."
+    },
+    {
+      "id": "shower",
+      "es": "Me ducho",
+      "en": "I take a shower",
+      "ipa": "/aɪ teɪk ə ˈʃaʊər/",
+      "help": "ai téik a sháuer",
+      "unit": 1,
+      "tip": "Take a shower es una expresión muy habitual.",
+      "example": "I take a shower at seven.",
+      "example_es": "Me ducho a las siete."
+    },
+    {
+      "id": "dress",
+      "es": "Me visto",
+      "en": "I get dressed",
+      "ipa": "/aɪ ɡɛt drɛst/",
+      "help": "ai guet drest",
+      "unit": 1,
+      "tip": "Get dressed no necesita my clothes.",
+      "example": "I get dressed before breakfast.",
+      "example_es": "Me visto antes de desayunar."
+    },
+    {
+      "id": "bed",
+      "es": "Hago mi cama",
+      "en": "I make my bed",
+      "ipa": "/aɪ meɪk maɪ bɛd/",
+      "help": "ai méik mai bed",
+      "unit": 2,
+      "tip": "Make my bed significa hacer la cama, no fabricar una cama.",
+      "example": "I make my bed every day.",
+      "example_es": "Hago mi cama todos los días."
+    },
+    {
+      "id": "breakfast",
+      "es": "Desayuno",
+      "en": "I eat breakfast",
+      "ipa": "/aɪ iːt ˈbrɛkfəst/",
+      "help": "ai iit brékfast",
+      "unit": 2,
+      "tip": "También es natural decir I have breakfast.",
+      "example": "I eat breakfast at eight.",
+      "example_es": "Desayuno a las ocho."
+    },
+    {
+      "id": "makecoffee",
+      "es": "Preparo café",
+      "en": "I make coffee",
+      "ipa": "/aɪ meɪk ˈkɑfi/",
+      "help": "ai méik cófi",
+      "unit": 2,
+      "tip": "Make se usa para preparar café.",
+      "example": "I make coffee in the kitchen.",
+      "example_es": "Preparo café en la cocina."
+    },
+    {
+      "id": "drinkcoffee",
+      "es": "Bebo café",
+      "en": "I drink coffee",
+      "ipa": "/aɪ drɪŋk ˈkɑfi/",
+      "help": "ai drink cófi",
+      "unit": 2,
+      "tip": "Drink expresa beber; make expresa preparar.",
+      "example": "I drink coffee with milk.",
+      "example_es": "Bebo café con leche."
+    },
+    {
+      "id": "phone",
+      "es": "Reviso mi teléfono",
+      "en": "I check my phone",
+      "ipa": "/aɪ tʃɛk maɪ foʊn/",
+      "help": "ai chek mai fóun",
+      "unit": 2,
+      "tip": "Check significa revisar o consultar.",
+      "example": "I check my phone after breakfast.",
+      "example_es": "Reviso mi teléfono después del desayuno."
+    },
+    {
+      "id": "work",
+      "es": "Voy al trabajo",
+      "en": "I go to work",
+      "ipa": "/aɪ ɡoʊ tə wɝk/",
+      "help": "ai góu ta uérk",
+      "unit": 2,
+      "tip": "No se usa the en go to work.",
+      "example": "I go to work at nine.",
+      "example_es": "Voy al trabajo a las nueve."
+    },
+    {
+      "id": "lunch",
+      "es": "Almuerzo",
+      "en": "I have lunch",
+      "ipa": "/aɪ hæv lʌntʃ/",
+      "help": "ai jav lanch",
+      "unit": 3,
+      "tip": "Have lunch significa almorzar; suele ser más habitual que eat lunch.",
+      "example": "I have lunch at two.",
+      "example_es": "Almuerzo a las dos."
+    },
+    {
+      "id": "home",
+      "es": "Regreso a casa",
+      "en": "I go back home",
+      "ipa": "/aɪ ɡoʊ bæk hoʊm/",
+      "help": "ai góu bak hóum",
+      "unit": 3,
+      "tip": "Home no suele llevar to después de go.",
+      "example": "I go back home in the afternoon.",
+      "example_es": "Regreso a casa por la tarde."
+    },
+    {
+      "id": "nap",
+      "es": "Tomo una siesta",
+      "en": "I take a nap",
+      "ipa": "/aɪ teɪk ə næp/",
+      "help": "ai téik a nap",
+      "unit": 3,
+      "tip": "Take a nap equivale a echar una siesta.",
+      "example": "I take a short nap after lunch.",
+      "example_es": "Echo una siesta corta después de almorzar."
+    },
+    {
+      "id": "read",
+      "es": "Leo un libro",
+      "en": "I read a book",
+      "ipa": "/aɪ riːd ə bʊk/",
+      "help": "ai ríid a buk",
+      "unit": 3,
+      "tip": "Read presente suena /riːd/; en pasado suele sonar /red/.",
+      "example": "I read a book in the afternoon.",
+      "example_es": "Leo un libro por la tarde."
+    },
+    {
+      "id": "dinner",
+      "es": "Preparo la cena",
+      "en": "I cook dinner",
+      "ipa": "/aɪ kʊk ˈdɪnər/",
+      "help": "ai kuk díner",
+      "unit": 4,
+      "tip": "Cook dinner recalca cocinar; make dinner también existe.",
+      "example": "I cook dinner at eight.",
+      "example_es": "Preparo la cena a las ocho."
+    },
+    {
+      "id": "dishes",
+      "es": "Lavo los platos",
+      "en": "I wash the dishes",
+      "ipa": "/aɪ wɑʃ ðə ˈdɪʃɪz/",
+      "help": "ai uósh tha díshiz*",
+      "unit": 4,
+      "tip": "The tiene un sonido dental /ð/, diferente de la d española.",
+      "example": "I wash the dishes after dinner.",
+      "example_es": "Lavo los platos después de cenar."
+    },
+    {
+      "id": "tv",
+      "es": "Veo la televisión",
+      "en": "I watch TV",
+      "ipa": "/aɪ wɑtʃ ˌtiː ˈviː/",
+      "help": "ai uóch tí-ví",
+      "unit": 4,
+      "tip": "Watch expresa ver algo que seguimos con atención.",
+      "example": "I watch TV at night.",
+      "example_es": "Veo la televisión por la noche."
+    },
+    {
+      "id": "music",
+      "es": "Escucho música",
+      "en": "I listen to music",
+      "ipa": "/aɪ ˈlɪsən tə ˈmjuːzɪk/",
+      "help": "ai lísen ta miúzik",
+      "unit": 4,
+      "tip": "En listen, la t no se pronuncia; se usa listen to.",
+      "example": "I listen to music when I clean.",
+      "example_es": "Escucho música cuando limpio."
+    },
+    {
+      "id": "clean",
+      "es": "Limpio la casa",
+      "en": "I clean the house",
+      "ipa": "/aɪ kliːn ðə haʊs/",
+      "help": "ai klíin tha jáus*",
+      "unit": 4,
+      "tip": "Clean significa limpiar.",
+      "example": "I clean the house on Saturdays.",
+      "example_es": "Limpio la casa los sábados."
+    }
+  ],
+  "units": [
+    {
+      "id": 1,
+      "title": "Así empieza mi día",
+      "goal": "Comprender, pronunciar y utilizar cinco expresiones sobre el inicio de la jornada en primera persona.",
+      "focus": [
+        "wake",
+        "washface",
+        "brush",
+        "shower",
+        "dress"
+      ],
+      "sections": [
+        {
+          "title": "1.1. ¿Cómo se construye una frase?",
+          "body": "En inglés, cuando hablamos de nuestra propia rutina, comenzamos habitualmente por I (yo), seguido del verbo en forma básica: I wake up, I wash, I brush. A diferencia del español, el sujeto I no se suele omitir. Escribe I siempre en mayúscula, incluso dentro de una frase.",
+          "example": "Ejemplo: «Me lavo la cara» → I wash my face. No basta escribir Wash my face si quieres hacer una frase afirmativa completa en este contexto."
+        },
+        {
+          "title": "1.2. Acciones de la mañana",
+          "body": "Wake up significa despertarse, mientras que get up significa levantarse de la cama: no son siempre lo mismo. Brush my teeth es cepillarme los dientes; teeth es plural de tooth (diente). Take a shower se aprende como bloque completo; traducir cada palabra por separado puede confundirte.",
+          "example": "Ejemplo: I wake up early. Then I brush my teeth. Finally, I get dressed. (Me despierto temprano. Después me cepillo los dientes. Por último, me visto)."
+        },
+        {
+          "title": "1.3. Orden y pronunciación",
+          "body": "Para enlazar dos acciones usa then (después) o after that (después de eso). Pronuncia con atención el contraste entre /ʃ/ (sh, como en shower), /tʃ/ (ch, como en check) y /θ/ (th de teeth). Los símbolos fonéticos IPA son la referencia más precisa; la lectura adaptada al español es solo una ayuda.",
+          "example": "Ejemplo: First, I wash my face. Then, I take a shower. (Primero me lavo la cara; después me ducho)."
+        }
+      ],
+      "dialogue": [
+        [
+          "A: Do you wake up early?",
+          "¿Te despiertas temprano?"
+        ],
+        [
+          "B: Yes, I do. I wake up early.",
+          "Sí. Me despierto temprano."
+        ],
+        [
+          "A: And then?",
+          "¿Y después?"
+        ],
+        [
+          "B: I brush my teeth and I get dressed.",
+          "Me cepillo los dientes y me visto."
+        ]
+      ],
+      "guided": [
+        "Ordenar tres pasos de la mañana",
+        "15 min",
+        "Tarjetas o cuaderno",
+        "Escribe en inglés: «Me despierto temprano. Después me lavo la cara. Por último, me visto».",
+        [
+          "Localiza las expresiones wake up early, wash my face y get dressed.",
+          "Escribe I delante de cada acción.",
+          "Une las ideas mediante First, Then y Finally.",
+          "Lee el resultado tres veces y compara con la guía."
+        ],
+        "First, I wake up early. Then, I wash my face. Finally, I get dressed."
+      ],
+      "individual": [
+        "Mi primera rutina",
+        "15 min",
+        "Cuaderno y tabla de vocabulario",
+        "Escribe cuatro frases verdaderas o ficticias sobre una mañana; utiliza al menos cuatro de las cinco expresiones de la unidad.",
+        "Ejemplo válido: I wake up early. I wash my face. I brush my teeth. I take a shower.",
+        "Se acepta cualquier secuencia coherente con I + expresión correcta, sin exigir datos personales reales."
+      ],
+      "group": [
+        "Entrevista con tarjetas",
+        "15 min",
+        "Dos juegos de tarjetas de rutina",
+        "En parejas, una persona pregunta Do you wake up early? y la otra responde Yes, I do / No, I don’t; intercambiad papeles y repetid con dos acciones.",
+        "A: Do you brush your teeth? B: Yes, I do. A: Do you take a shower? B: Yes, I do.",
+        "La pregunta usa your en lugar de my; la respuesta simple coincide con do."
+      ],
+      "challenge": [
+        "Detective de errores",
+        "10 min",
+        "Pizarra o ficha",
+        "Corrige: «i brush my tooth»; «I take shower»; «I get dress».",
+        "I brush my teeth. / I take a shower. / I get dressed.",
+        "Identifica mayúscula de I, plural teeth, artículo a y forma dressed."
+      ],
+      "quiz": [
+        {
+          "q": "¿Cómo se dice «Me visto»?",
+          "a": [
+            "I get dressed",
+            "I take a nap",
+            "I check my phone"
+          ],
+          "right": 0,
+          "why": "Get dressed = vestirse."
+        },
+        {
+          "q": "¿Qué significa «I wake up early»?",
+          "a": [
+            "Voy al trabajo",
+            "Me despierto temprano",
+            "Me lavo la cara"
+          ],
+          "right": 1,
+          "why": "Wake up = despertarse."
+        },
+        {
+          "q": "Completa: I brush my ____.",
+          "a": [
+            "face",
+            "teeth",
+            "bed"
+          ],
+          "right": 1,
+          "why": "Se dice brush my teeth."
+        },
+        {
+          "q": "¿Cuál es la opción correcta?",
+          "a": [
+            "i wash my face",
+            "I wash my face",
+            "I washes my face"
+          ],
+          "right": 1,
+          "why": "I siempre mayúscula y verbo base."
+        },
+        {
+          "q": "¿Qué expresión corresponde a «Me ducho»?",
+          "a": [
+            "I take a shower",
+            "I clean the house",
+            "I eat breakfast"
+          ],
+          "right": 0,
+          "why": "Take a shower = ducharse."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Desayuno, me organizo y voy al trabajo",
+      "goal": "Distinguir acciones relacionadas con el desayuno, la preparación personal y el desplazamiento al trabajo.",
+      "focus": [
+        "bed",
+        "breakfast",
+        "makecoffee",
+        "drinkcoffee",
+        "phone",
+        "work"
+      ],
+      "sections": [
+        {
+          "title": "2.1. Hacer frente a preparar",
+          "body": "En inglés no todas las acciones que en español comienzan por «hacer» usan el mismo verbo. Make my bed significa hacer la cama y make coffee, preparar café. Drink coffee significa beberlo, no prepararlo. Observa cómo cambia el significado del verbo según el complemento.",
+          "example": "Contraste: I make coffee (lo preparo) / I drink coffee (lo bebo)."
+        },
+        {
+          "title": "2.2. Breakfast, phone y work",
+          "body": "I eat breakfast es correcto; I have breakfast también es muy frecuente. En I check my phone, my significa mi. En I go to work no se coloca the porque se expresa ir al trabajo como actividad habitual, no dirigirse a un edificio concreto.",
+          "example": "Ejemplo: I make my bed, I have breakfast and I go to work. (Hago mi cama, desayuno y voy al trabajo)."
+        },
+        {
+          "title": "2.3. Indicar horas y frecuencia",
+          "body": "Para hablar de la hora, añade at + hora: at eight, at nine. Every day significa todos los días y on weekdays, entre semana. Usa estas expresiones al final de la frase para ampliarla sin cambiar su estructura básica.",
+          "example": "Ejemplo: I go to work at nine on weekdays. (Voy al trabajo a las nueve entre semana)."
+        }
+      ],
+      "dialogue": [
+        [
+          "A: Do you make coffee?",
+          "¿Preparas café?"
+        ],
+        [
+          "B: Yes, I do. I make coffee at eight.",
+          "Sí. Preparo café a las ocho."
+        ],
+        [
+          "A: Do you drink coffee at work?",
+          "¿Bebes café en el trabajo?"
+        ],
+        [
+          "B: No, I don’t. I drink coffee at home.",
+          "No. Bebo café en casa."
+        ]
+      ],
+      "guided": [
+        "Del desayuno al trabajo",
+        "15 min",
+        "Cuaderno y rotulador",
+        "Escribe cuatro acciones en inglés: hacer la cama; preparar café; beber café; ir al trabajo. Añade at nine a la última.",
+        [
+          "Asocia cada expresión con la ficha de vocabulario.",
+          "Distingue make y drink antes de escribir.",
+          "Pon I al inicio de cada oración.",
+          "Añade at nine después de work.",
+          "Comprueba que go to work no lleva the."
+        ],
+        "I make my bed. I make coffee. I drink coffee. I go to work at nine."
+      ],
+      "individual": [
+        "Mañana con horario",
+        "15 min",
+        "Cuaderno y reloj dibujado",
+        "Elabora cinco frases en inglés con actividades de la unidad y una hora para al menos dos de ellas.",
+        "I make my bed. I eat breakfast at eight. I make coffee. I check my phone. I go to work at nine.",
+        "Valorar orden comprensible, at + hora y corrección léxica."
+      ],
+      "group": [
+        "Simulación: compañero nuevo",
+        "15 min",
+        "Fichas de diálogo",
+        "En parejas, simulad un primer día de trabajo y contad lo que hacéis antes de salir de casa; uno pregunta y otro describe al menos tres pasos.",
+        "A: What do you do before work? B: I make my bed. Then I eat breakfast. Finally, I go to work.",
+        "Se valora la comunicación; se permite leer el guion al principio."
+      ],
+      "challenge": [
+        "Make, drink o go",
+        "10 min",
+        "Hoja breve",
+        "Completa: I ___ coffee (preparo); I ___ coffee (bebo); I ___ to work; I ___ my bed.",
+        "make / drink / go / make",
+        "Cuatro aciertos; revisar los errores con la tabla de vocabulario."
+      ],
+      "quiz": [
+        {
+          "q": "¿Qué significa «I make coffee»?",
+          "a": [
+            "Preparo café",
+            "Bebo café",
+            "Reviso mi teléfono"
+          ],
+          "right": 0,
+          "why": "Make = preparar en este caso."
+        },
+        {
+          "q": "¿Qué frase expresa «Bebo café»?",
+          "a": [
+            "I make coffee",
+            "I drink coffee",
+            "I clean coffee"
+          ],
+          "right": 1,
+          "why": "Drink = beber."
+        },
+        {
+          "q": "Señala la forma correcta:",
+          "a": [
+            "I go to the work",
+            "I goes to work",
+            "I go to work"
+          ],
+          "right": 2,
+          "why": "Para la actividad laboral usual no añadimos the."
+        },
+        {
+          "q": "¿Cómo decimos «Hago mi cama»?",
+          "a": [
+            "I make my bed",
+            "I do my bed",
+            "I go my bed"
+          ],
+          "right": 0,
+          "why": "La expresión habitual es make my bed."
+        },
+        {
+          "q": "Completa: I check my ____.",
+          "a": [
+            "phone",
+            "lunch",
+            "dishes"
+          ],
+          "right": 0,
+          "why": "Phone = teléfono."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "A mediodía y por la tarde",
+      "goal": "Describir acciones de mediodía y tarde y comprender expresiones con have, go back y read.",
+      "focus": [
+        "lunch",
+        "home",
+        "nap",
+        "read"
+      ],
+      "sections": [
+        {
+          "title": "3.1. Las comidas del día",
+          "body": "Breakfast suele corresponder al desayuno, lunch al almuerzo o comida de mediodía y dinner a la cena, aunque los horarios y nombres reales varían por país y cultura. La expresión I have lunch se aprende como unidad completa y significa almuerzo.",
+          "example": "Ejemplo: I have lunch at two. (Almuerzo a las dos)."
+        },
+        {
+          "title": "3.2. Volver a casa y descansar",
+          "body": "I go back home significa regreso a casa. En esta frase home actúa como adverbio de destino, por lo que normalmente no se dice go back to home. I take a nap significa echo una siesta. Puedes precisar short (corta).",
+          "example": "Ejemplo: I go back home. Then I take a short nap. (Vuelvo a casa y después echo una siesta corta)."
+        },
+        {
+          "title": "3.3. Read: una grafía, dos pronunciaciones",
+          "body": "El verbo read se escribe igual en presente y pasado, pero cambia su sonido: presente /riːd/ (parecido a «riid»); pasado /red/ (parecido a «red»). Nuestro curso usa el presente, por eso I read a book se pronuncia /aɪ riːd ə bʊk/.",
+          "example": "Ejemplo: Every afternoon, I read a book. (Todas las tardes leo un libro)."
+        }
+      ],
+      "dialogue": [
+        [
+          "A: What do you do after work?",
+          "¿Qué haces después del trabajo?"
+        ],
+        [
+          "B: I go back home and I have lunch.",
+          "Regreso a casa y almuerzo."
+        ],
+        [
+          "A: Do you take a nap?",
+          "¿Echas una siesta?"
+        ],
+        [
+          "B: Sometimes. I also read a book.",
+          "A veces. También leo un libro."
+        ]
+      ],
+      "guided": [
+        "Mi tarde en tres frases",
+        "15 min",
+        "Cuaderno y tarjeta de secuencia",
+        "Transforma «Regreso a casa. Después almuerzo. Por último leo un libro» en tres oraciones unidas por conectores.",
+        [
+          "Busca go back home, have lunch y read a book.",
+          "Escribe I en cada oración.",
+          "Usa First, Then, Finally para marcar el orden.",
+          "Lee en voz alta read con vocal larga /iː/."
+        ],
+        "First, I go back home. Then, I have lunch. Finally, I read a book."
+      ],
+      "individual": [
+        "Mini diario de tarde",
+        "15 min",
+        "Cuaderno",
+        "Redacta cuatro frases con las cuatro acciones, indicando un horario al menos una vez.",
+        "I have lunch at two. I go back home. I take a nap. I read a book.",
+        "La secuencia puede variar según la situación, pero cada expresión debe conservar su estructura."
+      ],
+      "group": [
+        "Historia encadenada",
+        "15 min",
+        "Tarjetas de cuatro acciones",
+        "En grupos de tres, cada persona añade una frase de una historia imaginaria sobre una tarde; el grupo debe completar las cuatro expresiones.",
+        "A: I have lunch. B: Then I go back home. C: After that, I take a nap. A: Finally, I read a book.",
+        "Se comprueba que todas las personas participen y se utilicen las cuatro expresiones."
+      ],
+      "challenge": [
+        "En la misma palabra",
+        "10 min",
+        "Tarjetas escritas",
+        "Marca la pronunciación de read en presente y corrige «I go back to home» y «I take nap».",
+        "read presente /riːd/; I go back home; I take a nap.",
+        "Detectar contraste fonético y uso de artículo / preposición."
+      ],
+      "quiz": [
+        {
+          "q": "«I have lunch» significa:",
+          "a": [
+            "Desayuno",
+            "Almuerzo",
+            "Ceno"
+          ],
+          "right": 1,
+          "why": "Lunch = almuerzo o comida de mediodía."
+        },
+        {
+          "q": "¿Qué frase significa «Regreso a casa»?",
+          "a": [
+            "I go back home",
+            "I go to home",
+            "I clean the house"
+          ],
+          "right": 0,
+          "why": "Se dice go back home."
+        },
+        {
+          "q": "«I take a nap» es:",
+          "a": [
+            "Me ducho",
+            "Echo una siesta",
+            "Leo un libro"
+          ],
+          "right": 1,
+          "why": "Nap = siesta."
+        },
+        {
+          "q": "¿Cómo se pronuncia read en «I read a book» (presente)?",
+          "a": [
+            "/red/",
+            "/riːd/",
+            "/reɪd/"
+          ],
+          "right": 1,
+          "why": "En presente /riːd/."
+        },
+        {
+          "q": "¿Qué expresión equivale a «Leo un libro»?",
+          "a": [
+            "I watch TV",
+            "I make my bed",
+            "I read a book"
+          ],
+          "right": 2,
+          "why": "Read a book = leer un libro."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tareas domésticas y tiempo libre",
+      "goal": "Utilizar expresiones relacionadas con la cena, las tareas domésticas y el ocio, con pronunciación inteligible.",
+      "focus": [
+        "dinner",
+        "dishes",
+        "tv",
+        "music",
+        "clean"
+      ],
+      "sections": [
+        {
+          "title": "4.1. Lo que hacemos en casa",
+          "body": "I cook dinner significa preparar o cocinar la cena. I wash the dishes significa lavar los platos y I clean the house significa limpiar la casa. Observa que dinner no necesita the, mientras que dishes y house aparecen con the en los ejemplos de la imagen.",
+          "example": "Ejemplo: I cook dinner. After that, I wash the dishes. (Preparo la cena; después lavo los platos)."
+        },
+        {
+          "title": "4.2. Ver y escuchar",
+          "body": "Watch suele usarse para ver una pantalla, programa o película: I watch TV. Listen se construye con to delante de lo que escuchas: I listen to music. Es incorrecto en esta estructura decir I listen music.",
+          "example": "Ejemplo: I listen to music and I watch TV at night. (Escucho música y veo la televisión por la noche)."
+        },
+        {
+          "title": "4.3. Tres sonidos que conviene practicar",
+          "body": "En wash, el conjunto sh representa /ʃ/, sonido continuo. En watch aparece /tʃ/, con una pequeña oclusión antes de liberar aire. En the, /ð/ es dental: coloca suavemente la lengua cerca de los dientes; no equivale exactamente a la d española. En listen, la letra t es muda.",
+          "example": "Ejemplo de contraste: wash /wɑʃ/ (lavar) frente a watch /wɑtʃ/ (ver)."
+        }
+      ],
+      "dialogue": [
+        [
+          "A: What do you do in the evening?",
+          "¿Qué haces por la noche?"
+        ],
+        [
+          "B: I cook dinner and wash the dishes.",
+          "Preparo la cena y lavo los platos."
+        ],
+        [
+          "A: And after dinner?",
+          "¿Y después de cenar?"
+        ],
+        [
+          "B: I watch TV or listen to music.",
+          "Veo la televisión o escucho música."
+        ]
+      ],
+      "guided": [
+        "El final del día",
+        "15 min",
+        "Cuaderno y fichas",
+        "Traduce y conecta: «Preparo la cena. Después lavo los platos. Por último escucho música».",
+        [
+          "Identifica cook dinner, wash the dishes, listen to music.",
+          "Escribe I antes de cada acción.",
+          "Coloca Then y Finally como conectores.",
+          "Subraya to en listen to music.",
+          "Practica los dos sonidos diferentes de wash y watch."
+        ],
+        "I cook dinner. Then I wash the dishes. Finally, I listen to music."
+      ],
+      "individual": [
+        "Mi tarde ideal",
+        "15 min",
+        "Cuaderno",
+        "Redacta cinco frases con acciones domésticas y de ocio; utiliza al menos cuatro expresiones de la unidad.",
+        "I clean the house. I listen to music. I cook dinner. I wash the dishes. I watch TV.",
+        "Se aceptan ordenaciones alternativas que tengan sentido."
+      ],
+      "group": [
+        "Simulación: reparto de tareas",
+        "15 min",
+        "Tarjetas y una mesa",
+        "Dos participantes organizan la cena de una casa compartida y explican oralmente quién hace cada tarea utilizando I cook / I wash / I clean.",
+        "A: I cook dinner. B: I wash the dishes. A: I clean the house. B: Then I watch TV.",
+        "No se exige hablar de un hogar real: escenario ficticio."
+      ],
+      "challenge": [
+        "Parejas con sonido diferente",
+        "10 min",
+        "Fichas",
+        "Señala qué palabra lleva /tʃ/: wash o watch; completa I listen ___ music y corrige I clean house.",
+        "watch; to; I clean the house.",
+        "Reconocimiento de /ʃ/, /tʃ/, to y the."
+      ],
+      "quiz": [
+        {
+          "q": "¿Qué significa «I cook dinner»?",
+          "a": [
+            "Preparo la cena",
+            "Desayuno",
+            "Lavo la cara"
+          ],
+          "right": 0,
+          "why": "Cook dinner = cocinar la cena."
+        },
+        {
+          "q": "Completa: I listen ___ music.",
+          "a": [
+            "at",
+            "to",
+            "in"
+          ],
+          "right": 1,
+          "why": "Listen to = escuchar."
+        },
+        {
+          "q": "¿Qué significa «I wash the dishes»?",
+          "a": [
+            "Me ducho",
+            "Lavo los platos",
+            "Limpio la casa"
+          ],
+          "right": 1,
+          "why": "Dishes = platos/vajilla."
+        },
+        {
+          "q": "Señala «Veo la televisión»:",
+          "a": [
+            "I look TV",
+            "I see the TV",
+            "I watch TV"
+          ],
+          "right": 2,
+          "why": "La expresión de la ficha es watch TV."
+        },
+        {
+          "q": "¿En qué palabra la t no se pronuncia?",
+          "a": [
+            "listen",
+            "watch",
+            "teeth"
+          ],
+          "right": 0,
+          "why": "La t de listen es muda."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Cuento mi día completo",
+      "goal": "Integrar las veinte expresiones para presentar oralmente y por escrito una rutina diaria sencilla.",
+      "focus": [
+        "wake",
+        "washface",
+        "brush",
+        "shower",
+        "dress",
+        "bed",
+        "breakfast",
+        "makecoffee",
+        "drinkcoffee",
+        "phone",
+        "work",
+        "lunch",
+        "home",
+        "nap",
+        "read",
+        "dinner",
+        "dishes",
+        "tv",
+        "music",
+        "clean"
+      ],
+      "sections": [
+        {
+          "title": "5.1. Cómo contar una historia del día",
+          "body": "Una buena descripción de la rutina tiene un inicio (in the morning), una parte intermedia (in the afternoon) y un cierre (in the evening / at night). Emplea first, then, after that y finally para que el oyente entienda el orden. No es necesario usar las veinte acciones; selecciona las que tengan sentido para tu personaje.",
+          "example": "Ejemplo: In the morning, I wake up early. Then I eat breakfast. In the afternoon, I have lunch. At night, I read a book."
+        },
+        {
+          "title": "5.2. Negar y preguntar en presente simple",
+          "body": "Para hablar de las costumbres propias, I + verbo base: I drink coffee. Para negar: I do not drink coffee, o su forma habitual I don’t drink coffee. Para preguntar a otra persona: Do you drink coffee? Respuestas breves: Yes, I do / No, I don’t. Estas estructuras se limitan aquí a I y you para facilitar el comienzo.",
+          "example": "Ejemplo: A: Do you watch TV? B: No, I don’t. I read a book."
+        },
+        {
+          "title": "5.3. La rutina no es una obligación personal",
+          "body": "El vocabulario se practica con un personaje ficticio si lo prefieres. No se requiere tener trabajo, beber café ni seguir una rutina determinada. Se evalúa el dominio del idioma y no el estilo de vida de quien participa.",
+          "example": "Ejemplo: My character is Alex. Alex says: I go to work at nine. (El personaje Alex dice: Voy al trabajo a las nueve)."
+        },
+        {
+          "title": "5.4. Autoevaluación autónoma",
+          "body": "Antes de presentar el trabajo final, comprueba que cada frase tenga sujeto y verbo, que los complementos coincidan con el significado y que haya al menos tres conectores temporales. Escucha y repite las expresiones con un ritmo natural. Si el navegador ofrece voz sintetizada, úsala como apoyo y no como evaluación definitiva del acento.",
+          "example": "Lista de control: sujeto I, verbo bien elegido, orden temporal, lectura comprensible y corrección de errores."
+        }
+      ],
+      "dialogue": [
+        [
+          "A: Tell me about your day.",
+          "Háblame de tu día."
+        ],
+        [
+          "B: First, I wake up early. Then I eat breakfast.",
+          "Primero me despierto temprano. Después desayuno."
+        ],
+        [
+          "A: What do you do in the evening?",
+          "¿Qué haces por la noche?"
+        ],
+        [
+          "B: I cook dinner and listen to music.",
+          "Preparo la cena y escucho música."
+        ]
+      ],
+      "guided": [
+        "Modelo completo comentado",
+        "15 min",
+        "Plantilla de cuatro momentos del día",
+        "Construye un pequeño relato de cuatro frases: despertarse, desayunar, almorzar, escuchar música.",
+        [
+          "Escribe In the morning, I wake up early.",
+          "Añade Then I eat breakfast.",
+          "Introduce In the afternoon, I have lunch.",
+          "Cierra con Finally, I listen to music.",
+          "Léelo en voz alta; comprueba I y los conectores."
+        ],
+        "In the morning, I wake up early. Then I eat breakfast. In the afternoon, I have lunch. Finally, I listen to music."
+      ],
+      "individual": [
+        "Mi relato final",
+        "15 min",
+        "Plantilla y diccionario",
+        "Redacta entre ocho y diez oraciones sobre la rutina real o inventada, con un mínimo de ocho expresiones distintas, tres conectores y una referencia de hora.",
+        "First, I wake up early. Then I brush my teeth. I get dressed. I make my bed. I eat breakfast at eight. I go to work. In the afternoon, I have lunch. Finally, I read a book.",
+        "La solución es un modelo; otras respuestas son válidas si respetan los requisitos."
+      ],
+      "group": [
+        "Presentación y entrevista",
+        "15 min",
+        "Tarjetas, cronómetro y rúbrica",
+        "En grupos de tres, presenta tu rutina durante un minuto; un compañero hace dos preguntas Do you...? y otra persona observa la rúbrica. Cambiad los roles.",
+        "A: Do you drink coffee? B: Yes, I do. A: Do you watch TV? B: No, I don’t.",
+        "Se valora inteligibilidad, repertorio de frases, interacción y respeto del turno."
+      ],
+      "challenge": [
+        "Revisión final por parejas",
+        "10 min",
+        "Plantilla de revisión",
+        "Corrige «i listen music», «I go to the work» y «i read book». Explica en qué contexto es válida «I make my coffee».",
+        "I listen to music. / I go to work. / I read a book. «I make my coffee» es válida si te refieres a preparar tu propio café.",
+        "«My coffee» puede ser gramatical: explicar por qué no debe marcarse como error absoluto; los errores claros son i, falta de to, the y artículo a."
+      ],
+      "quiz": [
+        {
+          "q": "Completa una pregunta: ___ you drink coffee?",
+          "a": [
+            "Are",
+            "Do",
+            "Does"
+          ],
+          "right": 1,
+          "why": "Con you se usa Do."
+        },
+        {
+          "q": "Para negar «I watch TV»:",
+          "a": [
+            "I don’t watch TV",
+            "I no watch TV",
+            "I am not watch TV"
+          ],
+          "right": 0,
+          "why": "Don’t + verbo base."
+        },
+        {
+          "q": "¿Qué conector indica «por último»?",
+          "a": [
+            "First",
+            "Then",
+            "Finally"
+          ],
+          "right": 2,
+          "why": "Finally = por último."
+        },
+        {
+          "q": "¿Cuál es la forma correcta?",
+          "a": [
+            "I listen music",
+            "I listen to music",
+            "I listen at music"
+          ],
+          "right": 1,
+          "why": "La preposición es to."
+        },
+        {
+          "q": "¿Qué frase se relaciona con la comida de mediodía?",
+          "a": [
+            "I have lunch",
+            "I wake up early",
+            "I brush my teeth"
+          ],
+          "right": 0,
+          "why": "Have lunch suele referirse a la comida de mediodía."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "after that",
+      "meaning": "después de eso",
+      "example": "Conector de secuencia: After that, I go to work."
+    },
+    {
+      "term": "at",
+      "meaning": "a las / en (horas)",
+      "example": "At eight significa a las ocho."
+    },
+    {
+      "term": "breakfast",
+      "meaning": "desayuno",
+      "example": "I eat breakfast."
+    },
+    {
+      "term": "brush",
+      "meaning": "cepillar",
+      "example": "I brush my teeth."
+    },
+    {
+      "term": "check",
+      "meaning": "comprobar, revisar",
+      "example": "I check my phone."
+    },
+    {
+      "term": "clean",
+      "meaning": "limpiar",
+      "example": "I clean the house."
+    },
+    {
+      "term": "coffee",
+      "meaning": "café",
+      "example": "I make coffee."
+    },
+    {
+      "term": "cook",
+      "meaning": "cocinar",
+      "example": "I cook dinner."
+    },
+    {
+      "term": "dinner",
+      "meaning": "cena",
+      "example": "I cook dinner."
+    },
+    {
+      "term": "do / don’t",
+      "meaning": "auxiliar de preguntas / negación",
+      "example": "Do you read? / I don’t read."
+    },
+    {
+      "term": "early",
+      "meaning": "temprano",
+      "example": "I wake up early."
+    },
+    {
+      "term": "every day",
+      "meaning": "todos los días",
+      "example": "I make my bed every day."
+    },
+    {
+      "term": "face",
+      "meaning": "cara",
+      "example": "I wash my face."
+    },
+    {
+      "term": "finally",
+      "meaning": "por último",
+      "example": "Finally, I read a book."
+    },
+    {
+      "term": "first",
+      "meaning": "primero",
+      "example": "First, I wake up."
+    },
+    {
+      "term": "get dressed",
+      "meaning": "vestirse",
+      "example": "I get dressed."
+    },
+    {
+      "term": "go back home",
+      "meaning": "regresar a casa",
+      "example": "I go back home."
+    },
+    {
+      "term": "go to work",
+      "meaning": "ir al trabajo",
+      "example": "I go to work."
+    },
+    {
+      "term": "have lunch",
+      "meaning": "almorzar",
+      "example": "I have lunch."
+    },
+    {
+      "term": "house",
+      "meaning": "casa (edificio, vivienda)",
+      "example": "I clean the house."
+    },
+    {
+      "term": "I",
+      "meaning": "yo",
+      "example": "I always va con mayúscula."
+    },
+    {
+      "term": "IPA / AFI",
+      "meaning": "Alfabeto Fonético Internacional",
+      "example": "/riːd/ representa la pronunciación de read en presente."
+    },
+    {
+      "term": "listen to",
+      "meaning": "escuchar",
+      "example": "I listen to music; la t de listen es muda."
+    },
+    {
+      "term": "lunch",
+      "meaning": "almuerzo / comida de mediodía",
+      "example": "I have lunch."
+    },
+    {
+      "term": "make",
+      "meaning": "hacer / preparar (según contexto)",
+      "example": "I make my bed; I make coffee."
+    },
+    {
+      "term": "my",
+      "meaning": "mi / mis",
+      "example": "My face, my teeth."
+    },
+    {
+      "term": "nap",
+      "meaning": "siesta",
+      "example": "I take a nap."
+    },
+    {
+      "term": "read",
+      "meaning": "leer",
+      "example": "En presente se pronuncia /riːd/."
+    },
+    {
+      "term": "routine",
+      "meaning": "rutina",
+      "example": "My daily routine."
+    },
+    {
+      "term": "shower",
+      "meaning": "ducha",
+      "example": "I take a shower."
+    },
+    {
+      "term": "teeth",
+      "meaning": "dientes",
+      "example": "Plural irregular de tooth."
+    },
+    {
+      "term": "then",
+      "meaning": "después, entonces",
+      "example": "Then I eat breakfast."
+    },
+    {
+      "term": "the",
+      "meaning": "el / la / los / las",
+      "example": "I clean the house; sonido /ð/."
+    },
+    {
+      "term": "TV",
+      "meaning": "televisión",
+      "example": "I watch TV."
+    },
+    {
+      "term": "wake up",
+      "meaning": "despertarse",
+      "example": "I wake up early."
+    },
+    {
+      "term": "wash",
+      "meaning": "lavar",
+      "example": "I wash the dishes."
+    },
+    {
+      "term": "watch",
+      "meaning": "ver / mirar con atención",
+      "example": "I watch TV."
+    },
+    {
+      "term": "work",
+      "meaning": "trabajo",
+      "example": "I go to work."
+    },
+    {
+      "term": "you",
+      "meaning": "tú / usted",
+      "example": "Do you drink coffee?"
+    }
+  ]
+}

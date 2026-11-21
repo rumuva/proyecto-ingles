@@ -24,6 +24,15 @@ function readProgress(course) {
     let unavailable = false;
     if (course.storageKey && Number.isInteger(course.passingScore) && course.units) {
         try {
+            if (course.completedStorageKey) {
+                const completed = JSON.parse(localStorage.getItem(course.completedStorageKey) ?? '[]');
+                if (Array.isArray(completed)) {
+                    for (const unit of completed) {
+                        if (Number.isInteger(unit) && unit >= 1 && unit <= course.units) passed.add(unit);
+                    }
+                    attempted = passed.size > 0;
+                }
+            }
             const saved = JSON.parse(localStorage.getItem(course.storageKey) ?? '[]');
             if (Array.isArray(saved)) {
                 for (const record of saved) {
@@ -156,7 +165,7 @@ async function initialise() {
             renderIndex();
         }
         window.addEventListener('storage', event => {
-            if (!event.key || catalogue.some(course => course.storageKey === event.key)) updateProgress();
+            if (!event.key || catalogue.some(course => course.storageKey === event.key || course.completedStorageKey === event.key)) updateProgress();
         });
         window.addEventListener('pageshow', event => {
             if (event.persisted) updateProgress();

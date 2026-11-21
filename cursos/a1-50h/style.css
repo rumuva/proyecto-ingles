@@ -178,3 +178,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
   font-weight: 700;
 }
 .quick-links .guide-download:hover { background: #f6e8db; }
+
+.next-unit { display: inline-block; margin-top: .65rem; }
+.word-example { display: block; font-style: italic; }

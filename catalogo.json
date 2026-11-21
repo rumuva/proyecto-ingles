@@ -16,7 +16,10 @@
       "height": 800
     },
     "resources": [
-      { "label": "Guía visual", "anchor": "#guia-visual" }
+      {
+        "label": "Guía visual",
+        "anchor": "#guia-visual"
+      }
     ],
     "finalLabel": "Abrir evaluación final"
   },
@@ -37,9 +40,44 @@
       "height": 800
     },
     "resources": [
-      { "label": "Guía de estudio", "anchor": "#programa" },
-      { "label": "Glosario", "anchor": "#glosario" }
+      {
+        "label": "Guía de estudio",
+        "anchor": "#programa"
+      },
+      {
+        "label": "Glosario",
+        "anchor": "#glosario"
+      }
     ],
     "finalLabel": "Abrir simulacro"
+  },
+  {
+    "id": "rutinas-diarias-10h",
+    "title": "Mi día en inglés",
+    "category": "Inglés general",
+    "level": "Nivel inicial A0–A1",
+    "duration": "10 horas",
+    "units": 5,
+    "passingScore": 4,
+    "storageKey": "rutinas_ingles_10h_v1_intentos",
+    "completedStorageKey": "rutinas_ingles_10h_v1",
+    "summary": "Practica veinte expresiones sobre rutinas diarias con diálogos, tarjetas y una presentación final.",
+    "cover": {
+      "src": "cursos/rutinas-diarias-10h/assets/rutina_ilustrada.webp",
+      "alt": "Seis escenas ilustradas de una rutina diaria",
+      "width": 1400,
+      "height": 933
+    },
+    "resources": [
+      {
+        "label": "Veinte frases",
+        "anchor": "#vocabulario"
+      },
+      {
+        "label": "Fichas imprimibles",
+        "anchor": "#descargas"
+      }
+    ],
+    "finalLabel": "Abrir evaluación final"
   }
 ]
