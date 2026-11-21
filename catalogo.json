@@ -60,7 +60,7 @@
     "units": 10,
     "passingScore": 4,
     "storageKey": "ingles-b1-50h-intentos-v1",
-    "summary": "Cuenta experiencias, reclama, contrasta noticias y defiende decisiones con datos.",
+    "summary": "Cuenta experiencias, resuelve incidencias y practica tareas de B1 Preliminary y de la Escuela Oficial de Idiomas.",
     "cover": {
       "src": "visuales/londres/tower.webp",
       "alt": "Vista de Tower Bridge y del Támesis, Londres",
@@ -68,6 +68,42 @@
       "height": 675
     },
     "resources": [
+      {
+        "label": "Preparación del examen",
+        "anchor": "#examen"
+      },
+      {
+        "label": "Programación",
+        "anchor": "#programa"
+      },
+      {
+        "label": "Glosario",
+        "anchor": "#glosario"
+      }
+    ],
+    "finalLabel": "Abrir evaluación final"
+  },
+  {
+    "id": "b2-50h",
+    "title": "Inglés B2 para certificar tu nivel",
+    "category": "Inglés general",
+    "level": "Nivel B2",
+    "duration": "50 horas",
+    "units": 10,
+    "passingScore": 4,
+    "storageKey": "ingles-b2-50h-intentos-v1",
+    "summary": "Argumenta con datos, mejora tu expresión oral y practica tareas de B2 First y de certificación de la EOI.",
+    "cover": {
+      "src": "visuales/londres/eye.webp",
+      "alt": "La noria London Eye y el Támesis desde Westminster Bridge",
+      "width": 1200,
+      "height": 803
+    },
+    "resources": [
+      {
+        "label": "Preparación del examen",
+        "anchor": "#examen"
+      },
       {
         "label": "Programación",
         "anchor": "#programa"
