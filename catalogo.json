@@ -10,10 +10,10 @@
     "storageKey": "ingles-a1-50h-intentos-v1",
     "summary": "Preséntate, orienta a alguien por la ciudad y pide en una cafetería. Practica con diálogos, subtítulos y ejercicios de pronunciación.",
     "cover": {
-      "src": "visuales/londres/eye.webp",
-      "alt": "El London Eye iluminado junto al Támesis",
+      "src": "cursos/a1-50h/portada.webp",
+      "alt": "Dos personas conversan en una terraza de Londres, con un autobús rojo al fondo",
       "width": 1200,
-      "height": 803
+      "height": 800
     },
     "resources": [
       { "label": "Guía visual", "anchor": "#guia-visual" }
@@ -31,10 +31,10 @@
     "storageKey": "ingles-comercio-0179-intentos-v1",
     "summary": "Presenta tu empresa, confirma pedidos, atiende reclamaciones y negocia en inglés. Termina con un simulacro de un caso comercial.",
     "cover": {
-      "src": "cursos/ingles-comercio-0179/comercio.svg",
-      "alt": "Mostrador comercial con paquetes listos para enviar",
-      "width": 680,
-      "height": 480
+      "src": "cursos/ingles-comercio-0179/portada.webp",
+      "alt": "Una profesional de ventas y un cliente revisan un pedido junto a varios paquetes",
+      "width": 1200,
+      "height": 800
     },
     "resources": [
       { "label": "Guía de estudio", "anchor": "#programa" },
