@@ -3,55 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Proyecto Inglés de Rubén Muñoz. Cursos con audios, ejercicios y recursos visuales basados en situaciones cotidianas.">
-  <title>Proyecto Inglés | Cursos de Rubén Muñoz</title>
-  <link rel="stylesheet" href="portal.css?v=catalogo-2">
+  <meta name="description" content="Índice de cursos de Proyecto Inglés de Rubén Muñoz. Busca un curso, consulta tu avance y retoma tus lecciones.">
+  <title>Proyecto Inglés | Índice de cursos</title>
+  <link rel="stylesheet" href="portal.css?v=indice">
+  <link rel="stylesheet" href="indice.css">
+  <script src="indice.js" defer></script>
 </head>
-<body>
+<body class="hub">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="./">Proyecto Inglés</a>
-      <nav aria-label="Navegación"><a href="#cursos">Cursos</a><a href="#londres">Londres</a></nav>
+      <nav class="hub-nav" aria-label="Navegación principal">
+        <a href="#cursos">Índice de cursos</a>
+        <a href="#progreso">Mi progreso</a>
+        <a href="#londres">Londres</a>
+        <a href="#gestion">Gestión</a>
+      </nav>
     </div>
   </header>
-  <main>
+  <main id="contenido">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="author">Rubén Muñoz</p>
         <h1 id="hero-title">Proyecto<br> Inglés</h1>
-        <p class="intro">Practica inglés para moverte por una ciudad, resolver situaciones cotidianas y hablar con más confianza.</p>
-        <a class="button" href="#cursos">Ver cursos</a>
+        <p class="intro">Encuentra tu curso, sigue tu avance y vuelve a la unidad que te toca.</p>
+        <a class="button" href="#cursos">Explorar cursos</a>
       </div>
       <figure class="hero-photo">
         <img src="visuales/londres/big-ben.webp" alt="Un autobús rojo de dos pisos frente al Big Ben" width="1496" height="1200" fetchpriority="high">
         <figcaption>Westminster, Londres</figcaption>
       </figure>
     </section>
+    <section class="wrap study-overview" id="progreso" aria-labelledby="progress-title" hidden>
+      <div class="overview-copy">
+        <h2 id="progress-title">Mi progreso</h2>
+        <p>Tu avance se lee en este navegador.</p>
+        <p id="storage-notice" hidden>El navegador impide leer el progreso guardado.</p>
+        <a class="button" id="resume-course" href="#cursos">Elegir un curso</a>
+      </div>
+      <dl class="study-metrics">
+        <div><dt>Cursos disponibles</dt><dd id="total-courses">—</dd></div>
+        <div><dt>Unidades aprobadas</dt><dd id="passed-units">—</dd></div>
+        <div><dt>Cursos con todas las unidades aprobadas</dt><dd id="finished-courses">—</dd></div>
+      </dl>
+    </section>
     <section class="wrap catalog" id="cursos" aria-labelledby="catalog-title">
-      <h2 id="catalog-title">Cursos disponibles</h2>
-      <article class="card">
-        <img src="visuales/londres/eye.webp" alt="El London Eye iluminado junto al Támesis" width="1200" height="803" loading="lazy">
-        <div class="details">
-          <p class="level">Nivel A1 · 50 horas</p>
-          <h3>Inglés básico en situaciones reales</h3>
-          <p>Aprende a presentarte, concertar una cita, pedir en una cafetería y orientarte en una ciudad. Practica con audios, infografías y autoevaluaciones en diez unidades.</p>
-          <div class="actions">
-            <a class="button" href="cursos/a1-50h/">Abrir el curso A1</a>
-            <a href="cursos/a1-50h/#guia-visual">Ver la guía visual</a>
-          </div>
+      <h2 id="catalog-title">Índice de cursos</h2>
+      <form class="catalog-filters" id="catalog-filters" role="search" hidden>
+        <div>
+          <label for="course-search">Buscar curso</label>
+          <input id="course-search" type="search" placeholder="Título, nivel o tema">
         </div>
-      </article>
-      <article class="card">
-        <img src="cursos/ingles-comercio-0179/comercio.svg" alt="Mostrador comercial con paquetes listos para enviar" width="680" height="480" loading="lazy">
-        <div class="details">
-          <p class="level">0179 · Preparación intensiva · 10 horas</p>
-          <h3>Inglés profesional para comercio</h3>
-          <p>Presenta tu empresa, confirma pedidos, atiende reclamaciones y negocia en inglés. Cinco unidades con casos guiados, escucha y práctica con micrófono.</p>
-          <div class="actions">
-            <a class="button" href="cursos/ingles-comercio-0179/">Abrir Inglés para comercio</a>
-          </div>
+        <div>
+          <label for="course-category">Categoría</label>
+          <select id="course-category"><option value="">Todas las categorías</option></select>
         </div>
-      </article>
+      </form>
+      <p class="catalog-count" id="catalog-count" role="status"></p>
+      <div id="catalog-cards"></div>
+      <ul id="catalog-fallback">
+        <li><a href="cursos/a1-50h/">Inglés básico en situaciones reales (A1)</a></li>
+        <li><a href="cursos/ingles-comercio-0179/">Inglés profesional para comercio (0179)</a></li>
+      </ul>
     </section>
     <section class="london-section" id="londres" aria-labelledby="london-title">
       <div class="wrap">
@@ -72,6 +86,16 @@
           </figure>
         </div>
       </div>
+    </section>
+    <section class="wrap management" id="gestion" aria-labelledby="management-title">
+      <h2 id="management-title">Gestión del proyecto</h2>
+      <p>Publica y organiza el material desde el repositorio de Proyecto Inglés.</p>
+      <ul class="management-grid">
+        <li><a href="https://github.com/rumuva/proyecto-ingles/tree/main/cursos">Archivos de los cursos</a><p>Abre las carpetas y sube el material de cada curso.</p></li>
+        <li><a href="https://github.com/rumuva/proyecto-ingles/edit/main/catalogo.json">Editar el índice</a><p>Añade una ficha o actualiza su título, nivel, duración y recursos.</p></li>
+        <li><a href="https://github.com/rumuva/proyecto-ingles/actions">Estado de publicación</a><p>Consulta el despliegue de GitHub Pages y sus resultados.</p></li>
+      </ul>
+      <a href="https://github.com/rumuva/proyecto-ingles#añadir-otro-curso">Pasos para publicar un curso</a>
     </section>
   </main>
   <footer class="wrap footer"><span>Proyecto Inglés · Rubén Muñoz</span><a href="creditos.html">Créditos de las fotografías</a></footer>

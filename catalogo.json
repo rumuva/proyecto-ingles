@@ -1,0 +1,45 @@
+[
+  {
+    "id": "a1-50h",
+    "title": "Inglés básico en situaciones reales",
+    "category": "Inglés general",
+    "level": "Nivel A1",
+    "duration": "50 horas",
+    "units": 10,
+    "passingScore": 4,
+    "storageKey": "ingles-a1-50h-intentos-v1",
+    "summary": "Preséntate, orienta a alguien por la ciudad y pide en una cafetería. Practica con diálogos, subtítulos y ejercicios de pronunciación.",
+    "cover": {
+      "src": "visuales/londres/eye.webp",
+      "alt": "El London Eye iluminado junto al Támesis",
+      "width": 1200,
+      "height": 803
+    },
+    "resources": [
+      { "label": "Guía visual", "anchor": "#guia-visual" }
+    ],
+    "finalLabel": "Abrir evaluación final"
+  },
+  {
+    "id": "ingles-comercio-0179",
+    "title": "Inglés profesional para comercio",
+    "category": "Inglés profesional",
+    "level": "Módulo 0179",
+    "duration": "10 horas recomendadas",
+    "units": 5,
+    "passingScore": 5,
+    "storageKey": "ingles-comercio-0179-intentos-v1",
+    "summary": "Presenta tu empresa, confirma pedidos, atiende reclamaciones y negocia en inglés. Termina con un simulacro de un caso comercial.",
+    "cover": {
+      "src": "cursos/ingles-comercio-0179/comercio.svg",
+      "alt": "Mostrador comercial con paquetes listos para enviar",
+      "width": 680,
+      "height": 480
+    },
+    "resources": [
+      { "label": "Guía de estudio", "anchor": "#programa" },
+      { "label": "Glosario", "anchor": "#glosario" }
+    ],
+    "finalLabel": "Abrir simulacro"
+  }
+]
