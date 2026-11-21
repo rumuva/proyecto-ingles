@@ -60,3 +60,5 @@ h3 { font-size: clamp(1.5rem, 3.2vw, 2.25rem); }
   .gallery { grid-template-columns: minmax(0,1fr); }
   .header-inner { min-height: 3.6rem; }
 }
+
+.catalog .card + .card { margin-top: 1.2rem; }

@@ -1,0 +1,132 @@
+{
+  "01": [
+    {
+      "start": 0.1,
+      "end": 3.24,
+      "text": "Good morning. I’m Maya from Atlas Office Supplies.",
+      "speaker": "A"
+    },
+    {
+      "start": 3.43,
+      "end": 6.69,
+      "text": "Nice to meet you. What does your company sell?",
+      "speaker": "B"
+    },
+    {
+      "start": 6.88,
+      "end": 10.79,
+      "text": "We supply stationery, printers and office furniture to local businesses.",
+      "speaker": "A"
+    },
+    {
+      "start": 10.98,
+      "end": 13.39,
+      "text": "Could you send me your catalogue and a quotation?",
+      "speaker": "B"
+    }
+  ],
+  "02": [
+    {
+      "start": 0.1,
+      "end": 4.6,
+      "text": "Could you supply fifty units of item A twelve by the fifteenth of March?",
+      "speaker": "A"
+    },
+    {
+      "start": 4.79,
+      "end": 8.36,
+      "text": "Yes. The unit price is eight euros, plus shipping.",
+      "speaker": "B"
+    },
+    {
+      "start": 8.55,
+      "end": 10.63,
+      "text": "Please confirm the delivery date in writing.",
+      "speaker": "A"
+    },
+    {
+      "start": 10.82,
+      "end": 16.27,
+      "text": "We confirm your order for fifty units. Delivery is expected on the fifteenth of March.",
+      "speaker": "B"
+    }
+  ],
+  "03": [
+    {
+      "start": 0.1,
+      "end": 2.81,
+      "text": "My parcel arrived damaged. One printer is broken.",
+      "speaker": "A"
+    },
+    {
+      "start": 3.0,
+      "end": 6.15,
+      "text": "I’m sorry to hear that. Could you provide your order number?",
+      "speaker": "B"
+    },
+    {
+      "start": 6.34,
+      "end": 9.19,
+      "text": "Of course. I’ll send a photo of the damaged item as well.",
+      "speaker": "A"
+    },
+    {
+      "start": 9.38,
+      "end": 12.92,
+      "text": "Thank you. We’ll review the details and contact you tomorrow.",
+      "speaker": "B"
+    }
+  ],
+  "04": [
+    {
+      "start": 0.1,
+      "end": 3.16,
+      "text": "Supplier B is faster, but Supplier A is cheaper.",
+      "speaker": "A"
+    },
+    {
+      "start": 3.35,
+      "end": 6.81,
+      "text": "Could you offer a five per cent discount for two hundred units?",
+      "speaker": "B"
+    },
+    {
+      "start": 7.0,
+      "end": 10.55,
+      "text": "We can offer a three per cent discount if you pay within ten days.",
+      "speaker": "A"
+    },
+    {
+      "start": 10.74,
+      "end": 13.43,
+      "text": "Thank you. Could you put those terms in writing?",
+      "speaker": "B"
+    }
+  ],
+  "05": [
+    {
+      "start": 0.1,
+      "end": 3.78,
+      "text": "Could you send us a quotation for one hundred units of model B four?",
+      "speaker": "A"
+    },
+    {
+      "start": 3.97,
+      "end": 6.88,
+      "text": "Certainly. Do you need shipping to Seville included?",
+      "speaker": "B"
+    },
+    {
+      "start": 7.07,
+      "end": 11.156,
+      "text": "Yes, please. Could you also confirm the estimated delivery date?",
+      "speaker": "A"
+    },
+    {
+      "start": 11.346,
+      "end": 14.146,
+      "text": "Of course. I’ll send you the quotation this afternoon.",
+      "speaker": "B"
+    }
+  ]
+}

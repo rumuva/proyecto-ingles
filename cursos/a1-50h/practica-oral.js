@@ -1,7 +1,7 @@
 const SpeechEngine = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const smallNumbers = 'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split(' ');
-const tens = 'zero ten twenty thirty forty fifty'.split(' ');
+const tens = 'zero ten twenty thirty forty fifty sixty seventy eighty ninety'.split(' ');
 const expansions = {
     "i'm": 'i am', "what's": 'what is', "she's": 'she is', "he's": 'he is',
     "it's": 'it is', "that's": 'that is', "doesn't": 'does not', "don't": 'do not',
@@ -23,7 +23,12 @@ function compareWords(phrase, reference) {
         source = source.replace(/\bkeycard\b/g, 'key card')
             .replace(/\bnoralee\b/g, 'nora lee')
             .replace(/\bokay\b/g, 'ok')
-            .replace(/\bcan not\b/g, 'cannot');
+            .replace(/\bcan not\b/g, 'cannot')
+            .replace(/\bpercent\b/g, 'per cent')
+            .replace(/\bcatalog\b/g, 'catalogue')
+            .replace(/\b15th\b/g, 'fifteenth')
+            .replace(/(\d)\s*%/g, '$1 per cent')
+            .replace(/\b([a-z])[- ]?(\d{1,2})\b/g, '$1 $2');
         const hasClockTime = /\b(?:nine fifteen|eleven twenty|nine thirty|ten thirty)\b/i.test(reference);
         source = source.replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\b/g, '$1$2')
             .replace(/\b\d+\b/g, digits => {
@@ -34,11 +39,15 @@ function compareWords(phrase, reference) {
                         return number(hour) + ' ' + (minute < 10 ? 'oh ' : '') + number(minute);
                     }
                 }
-                if (digits.length <= 2 && Number(digits) < 60) return number(Number(digits));
+                if (digits.length <= 2) return number(Number(digits));
+                if (/^[12]00$/.test(digits) && /\bhundred\b/i.test(reference)) {
+                    return (digits[0] === '1' ? 'one' : 'two') + ' hundred';
+                }
                 return [...digits].map(digit => smallNumbers[Number(digit)]).join(' ');
             });
         return (source.match(/[a-z]+(?:'[a-z]+)?/g) || [])
-            .flatMap(word => (expansions[word] || word).split(' '));
+            .flatMap(word => (expansions[word] || word).split(' '))
+            .map((word, i, parts) => word === 'a' && parts[i + 1] === 'hundred' ? 'one' : word);
     }
 
     const target = tokens(reference);

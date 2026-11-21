@@ -1,0 +1,67 @@
+const keys = [[{"correct": 1, "why": "Después de does, usa la forma base sell."}, {"correct": 0, "why": "Work in se usa para un área o departamento."}, {"correct": 2, "why": "Our company es tercera persona del singular."}, {"correct": 1, "why": "Una quotation refleja el precio o condiciones ofertadas."}, {"correct": 0, "why": "Local businesses dice quién compra."}], [{"correct": 0, "why": "By fija una fecha límite inclusiva."}, {"correct": 2, "why": "Per unit indica el precio de cada artículo."}, {"correct": 1, "why": "Expected indica una previsión."}, {"correct": 2, "why": "A12 es la referencia o SKU."}, {"correct": 0, "why": "El subtotal es 400 € y se añaden 12 €."}], [{"correct": 0, "why": "I’m sorry to hear that reconoce el problema del cliente."}, {"correct": 1, "why": "El número de pedido identifica la transacción."}, {"correct": 2, "why": "Refund se refiere a la devolución del importe."}, {"correct": 1, "why": "Describe revisión y actualización sin adelantar el resultado."}, {"correct": 0, "why": "Could you send a photo pide la evidencia necesaria."}], [{"correct": 1, "why": "Faster ya es el comparativo de fast."}, {"correct": 0, "why": "Lead time indica el tiempo de suministro acordado."}, {"correct": 2, "why": "200 × 10,30 € = 2.060 € con envío incluido."}, {"correct": 1, "why": "Within fija un plazo máximo."}, {"correct": 0, "why": "Could you offer formula la petición."}], [{"correct": 2, "why": "Indica la acción y la referencia del producto."}, {"correct": 1, "why": "Invoice significa factura."}, {"correct": 0, "why": "Including incluye el transporte en la oferta."}, {"correct": 1, "why": "Kind regards funciona como despedida profesional."}, {"correct": 0, "why": "Cifras, fechas y petición clara evitan retrabajo y ambigüedad."}]];
+const count = keys.length;
+const storageKey = 'ingles-comercio-0179-intentos-v1';
+const progress = document.querySelector('#progress');
+const storage = document.querySelector('#storage');
+const buttons = [...document.querySelectorAll('[data-open]')];
+const panels = [...document.querySelectorAll('main > article')];
+let active = 1;
+let records = [];
+try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    if (Array.isArray(saved)) records = saved.filter(record =>
+        record && Number.isInteger(record.unit) && record.unit >= 1 && record.unit <= count &&
+        Number.isInteger(record.score) && record.score >= 0 && record.score <= 5);
+} catch {
+    storage.textContent = 'El navegador restringe el guardado. El avance se mantendrá mientras esta página siga abierta.';
+}
+function passed(unit) {
+    return records.some(record => record.unit === unit && record.score >= 5);
+}
+function available(unit) {
+    for (let n = 1; n < unit; n++) if (!passed(n)) return false;
+    return true;
+}
+function refresh() {
+    buttons.forEach((button, index) => {
+        const unit = index + 1;
+        button.disabled = !available(unit);
+        if (unit === active) button.setAttribute('aria-current', 'step');
+        else button.removeAttribute('aria-current');
+        if (passed(unit) && !button.textContent.endsWith(' · aprobada')) button.append(' · aprobada');
+        panels[index].hidden = unit !== active;
+    });
+    document.querySelector('#final').hidden = !available(count + 1);
+    const current = records.filter(record => record.unit === active);
+    const last = current.at(-1);
+    progress.textContent = last ? 'Unidad ' + active + ' · ' + current.length + ' intentos · último resultado: ' + last.score + '/5.' : 'Unidad ' + active + ' · pendiente de autoevaluación.';
+}
+buttons.forEach((button, index) => button.addEventListener('click', () => {
+    if (!available(index + 1)) return;
+    active = index + 1;
+    refresh();
+    const heading = panels[index].querySelector('h2');
+    heading.tabIndex = -1;
+    heading.focus();
+}));
+panels.forEach((panel, index) => {
+    const form = panel.querySelector('form');
+    form.addEventListener('submit', event => {
+        event.preventDefault();
+        if (!available(index + 1)) return;
+        const answers = new FormData(form);
+        let score = 0;
+        const missed = [];
+        keys[index].forEach((item, j) => {
+            if (Number(answers.get('q'+j)) === item.correct) score++;
+            else missed.push('Pregunta '+(j+1)+': '+item.why);
+        });
+        records.push({unit:index+1, score, date:new Date().toISOString()});
+        try { localStorage.setItem(storageKey, JSON.stringify(records)); }
+        catch { storage.textContent = 'Guardado bloqueado en este navegador. El avance se mantiene durante esta visita.'; }
+        form.querySelector('.result').textContent = score+'/5. '+(score>=5 ? 'Unidad superada. ' : 'Repasa y vuelve a intentarlo. ')+missed.join(' ');
+        refresh();
+    });
+});
+while (active < count && passed(active)) active++;
+refresh();

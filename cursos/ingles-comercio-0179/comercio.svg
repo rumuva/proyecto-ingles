@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" role="img" aria-labelledby="t d">
+<title id="t">Puesto de venta y pedidos</title><desc id="d">Ilustración isométrica de un mostrador con un catálogo abierto, palés y paquetes preparados para el envío.</desc>
+<defs>
+  <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e8f7f0"/><stop offset="1" stop-color="#cae9df"/></linearGradient>
+  <g id="box" stroke="#563a37" stroke-width="2" stroke-linejoin="round">
+    <path d="M0 0 54 28 109 0 54-28Z" fill="#f7ca82"/>
+    <path d="M0 0 54 28v56L0 56Z" fill="#e9a858"/>
+    <path d="M54 28 109 0v56L54 84Z" fill="#bd7538"/>
+    <path d="m24-12 55 28v22l11-6V10L35-18Z" fill="#fff0be"/>
+    <path d="m65 56 17-9v13l-17 9Z" fill="#fff0dc"/>
+  </g>
+</defs>
+<rect width="680" height="480" rx="32" fill="url(#bg)"/>
+<path d="M48 296 342 146 631 294 343 445Z" fill="#9fc8b6"/>
+<path d="M48 296 343 445v17L48 312Z" fill="#48786a"/>
+<path d="M343 445 631 294v18L343 462Z" fill="#31594e"/>
+<g fill="none" stroke="#e6f3e9" stroke-width="2" opacity=".55">
+  <path d="m107 326 291-151m-232 182 291-153m-231 181 292-151m-231 181 291-151"/>
+  <path d="m105 266 292 148M164 237l292 147M225 207l289 148M284 176l289 149"/>
+</g>
+<g stroke="#162747" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M103 218 238 148 390 225 255 295Z" fill="#f0ce9d"/>
+  <path d="M103 218 255 295v83l-152-77Z" fill="#23465b"/>
+  <path d="M255 295 390 225v83l-135 70Z" fill="#152e44"/>
+  <path d="m133 225 87-45 91 46-87 45Z" fill="#fff7e7"/>
+  <path d="m220 180 4 91m-62-45 40-21m-30 29 36-19m35 25 41-21m-34 31 42-21" fill="none" stroke="#778985"/>
+  <path d="m325 227 36-19v-39l-36 19Z" fill="#18334d"/>
+  <path d="m330 192 26-14v25l-26 14Z" fill="#b8e1cd"/>
+  <path d="m270 320 102-52m-95 59 95-49" stroke="#50778a"/>
+</g>
+<path d="m381 307 103-53 109 55-102 54Z" fill="#a16b4b" stroke="#573b39" stroke-width="2"/>
+<path d="m381 307 110 56v13l-110-55Zm110 56 102-54v13l-102 54Z" fill="#6f4b39"/>
+<use href="#box" x="388" y="252"/><use href="#box" x="474" y="285"/><use href="#box" x="454" y="199"/>
+<circle cx="536" cy="108" r="34" fill="#f7d398"/><path d="m520 109 10 10 22-23" stroke="#31594e" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
