@@ -7,6 +7,7 @@
     const notice = document.querySelector('#storage');
     const final = document.querySelector('#final');
     const finalLink = document.querySelector('#open-final');
+    const variants = window.courseVariants?.[document.documentElement?.dataset.course] ?? [];
     let active = 1;
     let records = readRecords();
 
@@ -84,14 +85,48 @@
             next.addEventListener('click', () => openUnit(unit + 1));
         }
         form.after(next);
+
+        const alternative = variants[index];
+        let questions = keys[index];
+        function useAlternative() {
+            if (!alternative || questions !== keys[index]) return;
+            const first = form.querySelector('fieldset');
+            const legend = first.querySelector('legend');
+            legend.textContent = '1. ' + alternative.q;
+            first.querySelectorAll('label').forEach((label, option) => {
+                label.replaceChildren(label.querySelector('input'), ' ' + alternative.a[option]);
+            });
+            questions = [{correct: alternative.right, why: alternative.why}, ...keys[index].slice(1)];
+        }
+        let retry;
+        if (alternative) {
+            retry = document.createElement('button');
+            retry.type = 'button';
+            retry.className = 'retry-unit';
+            retry.textContent = 'Nuevo intento con una variante';
+            retry.hidden = true;
+            form.after(retry);
+            retry.addEventListener('click', () => {
+                if (unit !== active) return;
+                form.reset();
+                useAlternative();
+                result.textContent = 'Nuevo intento. La primera pregunta tiene una variante.';
+                form.querySelector('input').focus();
+                retry.hidden = true;
+            });
+            if (records.some(record => record.unit === unit && record.score < passingScore)) {
+                useAlternative();
+                retry.hidden = false;
+            }
+        }
         form.addEventListener('submit', event => {
             event.preventDefault();
             if (unit !== active || !available(unit) || !form.reportValidity()) return;
             const answers = new FormData(form);
-            if (keys[index].some((_, question) => !answers.has('q' + question))) return;
+            if (questions.some((_, question) => !answers.has('q' + question))) return;
             let score = 0;
             const missed = [];
-            keys[index].forEach((item, question) => {
+            questions.forEach((item, question) => {
                 if (answers.get('q' + question) === String(item.correct)) score++;
                 else missed.push('Pregunta ' + (question + 1) + '. ' + item.why);
             });
@@ -106,6 +141,7 @@
                 notice.textContent = 'El navegador ha bloqueado el guardado. El avance se conserva durante esta visita.';
             }
             const success = score >= passingScore;
+            if (retry) retry.hidden = success;
             result.textContent = `${score}/5. ${success ? 'Unidad superada.' : 'Repasa y vuelve a intentarlo.'} ${missed.join(' ')}`;
             next.hidden = !passed(unit);
             refresh();

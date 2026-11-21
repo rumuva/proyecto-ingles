@@ -1,0 +1,26 @@
+.exam-wrap { max-width: 70rem; padding-inline: 1.15rem; margin-inline: auto; }
+.exam-header { background: #e7f3ee; color: #14384c; padding: 1.2rem 0 1.7rem; }
+.exam-header h1 { color: #14384c; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.11; }
+.exam-header nav, .exam-actions { display: flex; flex-wrap: wrap; gap: .65rem; }
+.exam-header nav a { background: #fff; color: #10594c; padding: .5rem .7rem; border-radius: .35rem; }
+#simulacros { overflow-wrap: anywhere; padding-block: 1rem 2rem; }
+#simulacros > section { margin: 0 0 1.2rem; padding: 1rem; background: #fff; border: 1px solid #d4e1e5; border-radius: .5rem; }
+#simulacros dl { padding: 0; }
+#simulacros :where(audio, select, input, textarea) { min-width: 0; max-width: 100%; }
+#simulacros summary { cursor: pointer; font-weight: 700; }
+#simulacros :where(details, fieldset) { margin-block: .65rem; }
+#simulacros :where(button, select) { min-height: 2.6rem; }
+#simulacros :focus-visible, .exam-header a:focus-visible { outline: 3px solid #0d594b; outline-offset: 3px; }
+.exam-choice { display: flex; align-items: baseline; gap: .5rem; margin: .4rem 0; }
+.exam-photo, .exam-photos figure { margin: 0; }
+.exam-photos, .exam-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: .85rem; }
+.exam-photos img { max-width: 100%; height: auto; }
+.exam-fields label, .exam-score-form > label, #exam-clock > label { display: block; margin-bottom: .75rem; }
+.exam-fields input, .exam-score-form textarea { display: block; width: 100%; }
+.exam-scale { white-space: nowrap; }
+.exam-actions { margin-top: .65rem; }
+#exam-clock output { display: block; font-size: 1.6rem; font-variant-numeric: tabular-nums; margin-block: .5rem; }
+.exam-table { overflow-x: auto; }
+.exam-table th, .exam-table td { padding: .45rem; text-align: left; border-bottom: 1px solid #d3e1e4; }
+.exam-table th { font-weight: 650; }
+.exam-table td { white-space: nowrap; }

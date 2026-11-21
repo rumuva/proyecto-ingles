@@ -1,0 +1,23 @@
+.extra-practice {
+    margin-block: 1.4rem;
+    padding: 1rem;
+    background: #edf5f4;
+    border-inline-start: .25rem solid #176754;
+    border-radius: .3rem;
+    color: #203948;
+    overflow-wrap: anywhere;
+}
+
+.extra-practice h3 { margin-block-start: 0; }
+.extra-practice dt { font-weight: 700; }
+.extra-practice dd { margin: 0 0 .6rem; }
+.extra-practice summary { cursor: pointer; }
+.extra-practice ul, .extra-practice ol { padding-inline-start: 1.4rem; }
+
+.retry-unit { margin: .65rem .4rem .65rem 0; }
+.retry-unit[hidden] { display: none; }
+
+:where(a, button, summary, input, select, textarea):focus-visible {
+    outline: .18rem solid #0b695a;
+    outline-offset: .18rem;
+}

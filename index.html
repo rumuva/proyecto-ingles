@@ -7,7 +7,8 @@
   <title>Proyecto Inglés | Índice de cursos</title>
   <link rel="stylesheet" href="portal.css?v=indice">
   <link rel="stylesheet" href="indice.css">
-  <script src="indice.js?v=gauntlet" defer></script>
+  <script src="copia-progreso.js?v=2" defer></script>
+  <script src="indice.js?v=2" defer></script>
 </head>
 <body class="hub">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -41,6 +42,14 @@
         <p>Tu avance se lee en este navegador.</p>
         <p id="storage-notice" hidden>El navegador impide leer el progreso guardado.</p>
         <a class="button" id="resume-course" href="#cursos">Elegir un curso</a>
+        <details id="copia-progreso">
+          <summary>Guardar o recuperar mi progreso</summary>
+          <p>La copia incluye intentos, resultados de simulacros y el borrador de Rutinas. Guárdala en un lugar privado si has escrito datos personales.</p>
+          <button type="button">Exportar mi progreso</button>
+          <label for="progress-file">Importar y combinar una copia JSON</label>
+          <input id="progress-file" type="file" accept=".json,application/json">
+          <p role="status"></p>
+        </details>
       </div>
       <dl class="study-metrics">
         <div><dt>Cursos disponibles</dt><dd id="total-courses">—</dd></div>
@@ -50,6 +59,7 @@
     </section>
     <section class="wrap catalog" id="cursos" aria-labelledby="catalog-title">
       <h2 id="catalog-title">Índice de cursos</h2>
+      <p><a href="progresion.html">Compara cómo resolver una misma situación de A1 a B2</a>.</p>
       <form class="catalog-filters" id="catalog-filters" role="search" hidden>
         <div>
           <label for="course-search">Buscar curso</label>
@@ -67,7 +77,7 @@
         <li><a href="cursos/a2-50h/">Inglés A2 en situaciones cotidianas</a></li>
         <li><a href="cursos/b1-50h/">Inglés B1 para comunicarte con autonomía</a></li>
         <li><a href="cursos/b2-50h/">Inglés B2 para certificar tu nivel</a></li>
-        <li><a href="cursos/ingles-comercio-0179/">Inglés profesional para comercio (0179)</a></li>
+        <li><a href="cursos/ingles-comercio-0179/">Inglés profesional para comercio (preparación parcial 0179)</a></li>
         <li><a href="cursos/rutinas-diarias-10h/">Mi día en inglés (Rutinas diarias)</a></li>
       </ul>
     </section>

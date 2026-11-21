@@ -41,3 +41,8 @@
   .study-metrics dd { flex: 0 0 auto; }
 }
 #catalog-cards .card.without-cover { grid-template-columns: minmax(0, 1fr); }
+
+#copia-progreso { margin-top: 1rem; }
+#copia-progreso summary { cursor: pointer; font-weight: 650; }
+#copia-progreso label { display: block; margin-top: .65rem; }
+#copia-progreso input { max-width: 100%; }

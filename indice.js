@@ -164,6 +164,7 @@ async function initialise() {
             renderOverview();
             renderIndex();
         }
+        enableProgressBackup(catalogue, updateProgress);
         window.addEventListener('storage', event => {
             if (!event.key || catalogue.some(course => course.storageKey === event.key || course.completedStorageKey === event.key)) updateProgress();
         });

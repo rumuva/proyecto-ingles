@@ -9,10 +9,26 @@ const expansions = {
 };
 
 function compareWords(phrase, reference) {
-    function number(n) {
+    function cardinal(n) {
         if (n < 20) return smallNumbers[n];
-        return tens[Math.floor(n / 10)] + (n % 10 ? ' ' + smallNumbers[n % 10] : '');
+        if (n < 100) {
+            return tens[Math.floor(n / 10)] + (n % 10 ? ' ' + cardinal(n % 10) : '');
+        }
+        const scale = n < 1000 ? 100 : n < 1000000 ? 1000 : 1000000;
+        const word = scale === 100 ? 'hundred' : scale === 1000 ? 'thousand' : 'million';
+        return cardinal(Math.floor(n / scale)) + ' ' + word + (n % scale ? ' ' + cardinal(n % scale) : '');
     }
+
+    function clock(hour, minute) {
+        return cardinal(hour) + (minute ? ' ' + (minute < 10 ? 'oh ' : '') + cardinal(minute) : " o'clock");
+    }
+
+    const clockContext = /\b(?:at|from|until|before|after|around|by)\s+\d{1,2}[:.]\d{2}\b|\b\d{1,2}[:.]\d{2}\b|\bat\s+\d{3,4}(?=[.!?,]|$)|\b\d{1,4}\s*[ap]\.?m\.?\b|\b(?:at|from|until|before|after|around|by)\s+(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\s+(?:oh|teen|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|o'clock)\b/i.test(reference);
+    const digitContext = /\b(?:phone(?: number)?|mobile|extension|post ?code|zip code|pin|access code|booking reference|confirmation number)\b/i.test(reference);
+    const scaleWords = 'hundred|thousand|million';
+    const followingNumber = [...smallNumbers.slice(1), ...tens.slice(2)].join('|');
+    const internalAnd = new RegExp('\\b(' + scaleWords + ') and (?=' + followingNumber + '\\b)', 'g');
+
     function tokens(value) {
         let source = value.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/[‘’]/g, "'");
         if (/^n, o, r, a\.$/i.test(reference)) {
@@ -28,26 +44,33 @@ function compareWords(phrase, reference) {
             .replace(/\bcatalog\b/g, 'catalogue')
             .replace(/\b15th\b/g, 'fifteenth')
             .replace(/(\d)\s*%/g, '$1 per cent')
-            .replace(/\b([a-z])[- ]?(\d{1,2})\b/g, '$1 $2');
-        const hasClockTime = /\b(?:nine fifteen|eleven twenty|nine thirty|ten thirty)\b/i.test(reference);
-        source = source.replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\b/g, '$1$2')
-            .replace(/\b\d+\b/g, digits => {
-                if (hasClockTime && /^\d{3,4}$/.test(digits)) {
+            .replace(/\b([a-z])[- ]?(\d{1,2})\b/g, '$1 $2')
+            .replace(/\b(\d{1,3}(?:,\d{3})+)\b/g, digits => digits.replace(/,/g, ''))
+            .replace(/([£$€])\s*(\d+)(?:\.(\d{2}))?(?!\d|\.\d)/g, (_, symbol, amount, fraction) => {
+                const [major, minor] = {'£': ['pound', 'penny'], '$': ['dollar', 'cent'], '€': ['euro', 'cent']}[symbol];
+                const main = cardinal(Number(amount)) + ' ' + (Number(amount) === 1 ? major : major + 's');
+                return fraction && fraction !== '00'
+                    ? main + ' and ' + cardinal(Number(fraction)) + ' ' + (fraction === '01' ? minor : symbol === '£' ? 'pence' : 'cents')
+                    : main;
+            })
+            .replace(/\b(\d{1,2})\s*[:.]\s*(\d{2})\b/g, (value, hour, minute) =>
+                (value.includes(':') || clockContext) && Number(hour) < 24 && Number(minute) < 60 ? clock(Number(hour), Number(minute)) : value)
+            .replace(/\b(\d+)\b/g, digits => {
+                if (clockContext && /^\d{3,4}$/.test(digits)) {
                     const hour = Number(digits.slice(0, -2));
                     const minute = Number(digits.slice(-2));
-                    if (hour > 0 && hour < 24 && minute > 0 && minute < 60) {
-                        return number(hour) + ' ' + (minute < 10 ? 'oh ' : '') + number(minute);
-                    }
+                    if (hour > 0 && hour < 24 && minute < 60) return clock(hour, minute);
                 }
-                if (digits.length <= 2) return number(Number(digits));
-                if (/^[12]00$/.test(digits) && /\bhundred\b/i.test(reference)) {
-                    return (digits[0] === '1' ? 'one' : 'two') + ' hundred';
+                if ((digitContext && digits.length > 2) || /^0\d/.test(digits) || digits.length > 9) {
+                    return [...digits].map(digit => smallNumbers[Number(digit)]).join(' ');
                 }
-                return [...digits].map(digit => smallNumbers[Number(digit)]).join(' ');
-            });
+                return cardinal(Number(digits));
+            })
+            .replace(/\ba (hundred|thousand|million)\b/g, 'one $1')
+            .replace(internalAnd, '$1 ')
+            .replace(/\b(a|p)\.?\s*m\b\.?/g, '$1m');
         return (source.match(/[a-z]+(?:'[a-z]+)?/g) || [])
-            .flatMap(word => (expansions[word] || word).split(' '))
-            .map((word, i, parts) => word === 'a' && parts[i + 1] === 'hundred' ? 'one' : word);
+            .flatMap(word => (expansions[word] || word).split(' '));
     }
 
     const target = tokens(reference);
@@ -199,10 +222,10 @@ for (const practice of document.querySelectorAll('.speaking-practice')) {
         differences.replaceChildren();
         feedback.hidden = false;
         if (!issues.length) {
-            status.textContent = 'OK. El navegador ha reconocido todas las palabras de la frase.';
+            status.textContent = 'La transcripción coincide con la frase modelo.';
             return;
         }
-        status.textContent = 'Revisa estas palabras y vuelve a escuchar el modelo.';
+        status.textContent = 'La transcripción difiere del modelo. Escucha de nuevo y compara estas palabras.';
         for (const { expected, heard } of issues) {
             const item = document.createElement('li');
             function addWord(word) {
