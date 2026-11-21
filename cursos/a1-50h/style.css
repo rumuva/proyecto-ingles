@@ -74,3 +74,40 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
   .hero-figure img { aspect-ratio: 16/9; }
   .unit-grid { grid-template-columns: minmax(0,1fr); }
 }
+
+.audio-player {
+  margin: 1rem 0;
+  padding: .85rem;
+  border: 1px solid #d3deea;
+  border-radius: .5rem;
+  background: #f3f7fb;
+}
+.audio-player p { margin: 0 0 .55rem; }
+.captions-toggle {
+  margin-top: .55rem;
+  min-height: 2.75rem;
+  color: #162747;
+  background: white;
+  border: 1px solid #879ab2;
+}
+.captions-toggle[aria-pressed="true"] {
+  color: white;
+  background: var(--blue);
+  border-color: var(--blue);
+}
+.audio-captions {
+  min-height: 3.15rem;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  gap: .35rem;
+  margin-top: .65rem;
+  padding: .55rem .65rem;
+  border-radius: .4rem;
+  background: #132740;
+  color: white;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.captions-speaker { color: #ffdaaa; font-weight: 700; }
+.captions-speaker:empty, .captions-state:empty { display: none; }
