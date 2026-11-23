@@ -46,3 +46,6 @@ dd{margin-inline-start:0}
 @media print{.pattern-scroll{overflow:visible}.pattern-scroll table{min-width:0;font-size:.82rem}}
 .oral select{font:inherit;max-width:100%;background:#fff;border:1px solid #758586;border-radius:4px;padding:.2rem .35rem}
 .next-unit{margin-top:.8rem}
+.pattern-scroll th[scope=row]{background:#f7f9f9;font-weight:650}
+.pattern-scroll .tense-formula{font-size:.9rem;margin:0}
+.pattern-scroll .tense-example{margin:.5rem 0 0;color:#174e49}
