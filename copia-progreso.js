@@ -55,6 +55,7 @@ function enableProgressBackup(courseList, refresh) {
         const draft = localStorage.getItem(draftKey);
         if (typeof draft === 'string') data[draftKey] = draft.slice(0, 12000);
         for (const key of examKeys) data[key] = exams(storageRead(key), key.split('-')[3]);
+        data[portfolioStore.key] = portfolioStore.read();
         return data;
     }
 
@@ -79,6 +80,7 @@ function enableProgressBackup(courseList, refresh) {
                 if (!local || Date.parse(item.date) > Date.parse(local.date)) merged[key][name] = item;
             }
         }
+        merged[portfolioStore.key] = portfolioStore.merge(current[portfolioStore.key], imported[portfolioStore.key]);
         if (!current[draftKey] && typeof imported[draftKey] === 'string') merged[draftKey] = imported[draftKey].slice(0, 12000);
         const entries = Object.entries(merged).map(([key, value]) => ({
             key, before: localStorage.getItem(key), after: key === draftKey ? value : JSON.stringify(value)

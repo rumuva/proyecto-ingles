@@ -18,3 +18,9 @@ El repositorio contiene la versión para alumnado. Guarda la documentación doce
 - Los itinerarios B1 y B2 ofrecen diagnóstico, cronómetro complementario y comparación de dos resultados con muestras oficiales completas enlazadas. La producción y la mediación se valoran con apoyo docente y las hojas de observación de cada entidad.
 - Desde el catálogo se pueden hacer copias de los intentos, los resultados de simulacros y el borrador de Rutinas. La importación combina la copia y el progreso de ese navegador.
 - Las guías públicas y los cuadernos de simulacro son PDF etiquetados. Los Word editables y las guías de profesorado se distribuyen en el paquete docente.
+
+## Retos y portafolio
+
+Cada unidad enlaza un reto de transferencia con escenario, respuesta modelo, dos criterios observables y una variante para otra sesión. Los retos forman parte de la práctica o refuerzo y no alteran los requisitos de avance del curso. Cada cuaderno incluye una actividad de escucha complementaria con enlace a audio y transcripción.
+
+El portafolio guarda en el navegador el primer intento y la repetición. La descarga de evidencias es un archivo de texto. La copia JSON del catálogo permite trasladar las evidencias junto con los intentos y los simulacros.
