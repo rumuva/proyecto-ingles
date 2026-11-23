@@ -203,5 +203,31 @@
       }
     ],
     "finalLabel": "Abrir evaluación final"
+  },
+  {
+    "id": "gramatica-elite",
+    "title": "Gramática Inglesa Élite",
+    "category": "Inglés general",
+    "level": "Nivel B2 alto–C1",
+    "duration": "40 horas",
+    "units": 8,
+    "summary": "Entrena estructuras avanzadas con traducción rápida, transformaciones y práctica oral.",
+    "cover": {
+      "src": "cursos/gramatica-elite/portada.webp",
+      "alt": "Diagrama de práctica oral: situación, estructura y respuesta",
+      "width": 900,
+      "height": 310
+    },
+    "resources": [
+      {
+        "label": "Programación",
+        "anchor": "#programacion"
+      },
+      {
+        "label": "Glosario",
+        "anchor": "#glosario"
+      }
+    ],
+    "finalLabel": "Evaluación final"
   }
 ]
