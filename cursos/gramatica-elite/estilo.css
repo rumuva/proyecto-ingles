@@ -39,3 +39,8 @@ dd{margin-inline-start:0}
 .oral{border-left:4px solid var(--teal);padding:.8rem 1rem;background:#edf6f3}
 .oral summary{cursor:pointer;padding:.2em 0;font-weight:600}
 .oral details p{margin:.25rem 0 .55rem}
+.pattern-scroll{max-width:100%;overflow-x:auto;margin-block:1rem;padding-bottom:.35rem}
+.pattern-scroll table{min-width:640px}
+.pattern-scroll th:first-child{min-width:128px}
+.pattern-scroll td{overflow-wrap:normal}
+@media print{.pattern-scroll{overflow:visible}.pattern-scroll table{min-width:0;font-size:.82rem}}
