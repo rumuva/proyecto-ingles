@@ -44,3 +44,5 @@ dd{margin-inline-start:0}
 .pattern-scroll th:first-child{min-width:128px}
 .pattern-scroll td{overflow-wrap:normal}
 @media print{.pattern-scroll{overflow:visible}.pattern-scroll table{min-width:0;font-size:.82rem}}
+.oral select{font:inherit;max-width:100%;background:#fff;border:1px solid #758586;border-radius:4px;padding:.2rem .35rem}
+.next-unit{margin-top:.8rem}

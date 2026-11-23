@@ -53,6 +53,12 @@
         button.addEventListener('click', () => openUnit(Number(button.dataset.open), true));
     }
     for (const form of document.querySelectorAll('.quiz')) {
+        const next = form.querySelector('.next-unit');
+        const formUnit = Number(form.dataset.unit);
+        if (next && formUnit < sections.length) {
+            next.hidden = !passed.has(formUnit);
+            next.addEventListener('click', () => openUnit(formUnit + 1, true));
+        }
         form.addEventListener('submit', event => {
             event.preventDefault();
             const unit = Number(form.dataset.unit);
@@ -64,6 +70,7 @@
             attempts[unit - 1] += 1;
             if (score >= 4) {
                 passed.add(unit);
+                if (next && unit < sections.length) next.hidden = false;
                 if (unit === unlocked) unlocked += 1;
             }
             try {
@@ -94,9 +101,10 @@
         let clock;
         button.addEventListener('click', () => {
             const display = button.nextElementSibling;
-            const deadline = Date.now() + Number(button.dataset.timer) * 1000;
+            const seconds = Number(button.parentElement.querySelector('select').value);
+            const deadline = Date.now() + seconds * 1000;
             clearInterval(clock);
-            display.textContent = '8 s. Responde en voz alta.';
+            display.textContent = seconds + ' s. Responde en voz alta.';
             function tick() {
                 const remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
                 if (remaining) {
